@@ -3,10 +3,10 @@ title: 'Remaining Payment Email'
 visible: true
 ---
 
-This is the email sent to admin and registrant when a registrant complete the remaining payment for his registration (which was used deposit payment at the time they process registration)
+Events Booking emails the administrator and the registrant when the registrant pays the remaining balance on a registration they started with a deposit.
 
 ## Email sent to administrator
-- Go to Events Booking -> Emails & Messages, look at **Remaining Payment Messages** tab, find and change the two items **Remaining Payment Admin Email Subject** and **Remaining Payment Admin Email Body** to meet your need.
+- Go to Events Booking -> Emails & Messages, look at **Remaining Payment Messages** tab, find and change the two items **Remaining Payment Admin Email Subject** and **Remaining Payment Admin Email Body** to suit your needs.
 
 The following tags are supported:
 - Any custom fields show on payment form can be inserted into email message using syntax [NAME_OF_FIELD_IN_UPPERCASE] . For example [FIRST_NAME], [LAST_NAME], [ORGANIZATION], [ADDRESS], [CITY], [STATE], [COUNTRY], [PHONE], [FAX]
@@ -32,5 +32,5 @@ The following tags are supported:
 
 
 ## Email Sent To Registrant
-- Go to Events Booking -> Emails & Messages, look at **Remaining Payment Messages** tab, find and change the two items **Remaining Payment User Email Subject** and **Remaining Payment User Email Body** to meet your need.
+- Go to Events Booking -> Emails & Messages, look at **Remaining Payment Messages** tab, find and change the two items **Remaining Payment User Email Subject** and **Remaining Payment User Email Body** to suit your needs.
 - Supported Tags: Same with email sent to administrator listed above

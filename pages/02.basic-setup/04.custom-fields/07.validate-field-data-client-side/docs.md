@@ -3,27 +3,27 @@ title: 'Validate Field Data - Client Side'
 media_order: client-validation-rules.png
 ---
 
-**Events Booking** use [jQuery Validation Engine](http://posabsolute.github.io/jQuery-Validation-Engine/) for client side validation. If you setup **Validation Rules** for a field, as soon as you enter data for that field, the engine will validate the data you entered with the configured rules and if it's not valid, an error message will be shown to let you know about the error and correct it.
+**Events Booking** uses [jQuery Validation Engine](http://posabsolute.github.io/jQuery-Validation-Engine/) for client-side validation. When you set **Validation Rules** for a field, the engine checks the value as users enter it. If the value is invalid, an error message lets them know what to correct.
 
-If you want to validate data of a custom field using this client validation feature, go to **Events Booking** -> **Custom Fields**, click on the custom field to edit, enter the rules you want to use into **Validation Rules** setting of that custom field. For example:
+To validate a field in the browser, go to **Events Booking** -> **Custom Fields**, edit the field, and enter the rules in **Validation Rules**.
 
 - **validate[required,custom[email]]** will make the field required and must be a valid email
 - **validate[required,custom[integer],min[10]]** will make the field required and the must be an integer smaller than 10
 
-To help you configure it easier, the system tries to populate **Validation Rules** automatically base on two settings in custom fields:
-- **Required**: If you select Yes, Events Booking will insert **validate[required]** to **Validation Rules** automatically.
-- **Data Type Validation**: When you select an option, the system will insert the related rules into **Validation Rules** automatically. For example, when you select **Min Integer**, the system will insert **validate[required,custom[integer],min[-5]]**, of curse, you will need to change -5 to the correct value you want.
-- You can use multiple validation rule for a field, the rules are separated by comma. For example **validate[required,custom[integer],min[-5]]** contain 3 rules:
+Events Booking can automatically populate **Validation Rules** based on these two custom field settings.
+- **Required**: Select Yes to add **validate[required]** to **Validation Rules** automatically.
+- **Data Type Validation**: Select an option to add the corresponding rules to **Validation Rules**. For example, **Min Integer** adds **validate[required,custom[integer],min[-5]]**. Replace -5 with the minimum value you want to accept.
+- Separate multiple validation rules with commas. For example, **validate[required,custom[integer],min[-5]]** contains three rules.
 + **required** : The field is required
-+ **custom[integer]**: Data entered into this field will need to be an integer value
-+ **min[-5]**: That mean the minimum value you can enter into this field is -5. You cannot enter smaller value like -6, -7.....
-- By default, the system will display error message base on the configured rules if the validation for that field does not pass. If you want to use a custom message for that field, enter the message into **Validation Error Message** setting of the field
++ **custom[integer]**: Requires an integer.
++ **min[-5]**: Sets the minimum to -5. Values such as -6 and -7 fail validation.
+- By default, Events Booking displays the error message for the rule that failed. To use your own message, enter it in **Validation Error Message**.
 
 ## Supported Validation Rules
 Below are the list of validation rules which you can use to validate data of a custom field. For each field, you can use multiple validation rules, separate each rule by comma. See See [https://github.com/posabsolute/jQuery-Validation-Engine?tab=readme-ov-file#validators](https://github.com/posabsolute/jQuery-Validation-Engine?tab=readme-ov-file#validators) for details documentation if needed, but the below explanation should be enough
 
 ### Required
-Speaks for itself, fails if the element has no value. If you want to use this rule, just edit the field, set **Required** to **Yes** . When you do that, **Events Booking** will automatically insert **required** rule into **Validation Rules** setting of the field. For example, **validate[required]**
+This rule rejects an empty field. Set **Required** to **Yes** to add the **required** rule to **Validation Rules**, as in **validate[required]**.
 
 ### Integer Number
 Use this rule to make sure data entered into the field is an integer value. To use this rule, set **Data Type Validation** of the field to **Integer Number** or insert **custom[integer]** manually to **Validation Rules**  setting of the field. For example **validate[required,custom[integer]]**
@@ -41,7 +41,7 @@ Use this rule to make sure data entered into the field is a url. To use this rul
 Use this rule to make sure data entered into the field is a phone number. To use this rule, set **Data Type Validation** of the field to **Phone** or insert **custom[phone]** manually to **Validation Rules**  setting of the field. For example **validate[required,custom[phone]]**
 
 ### Date
-Use this rule to make sure data entered into the field is a date. The date is validated base on format controlled in **Date Picker Format** config option. To use this rule, set **Data Type Validation** of the field to **Date** or insert **custom[date]** manually to **Validation Rules**  setting of the field. For example **validate[required,custom[date]]**
+This rule validates a date against the format in **Date Picker Format**. Set **Data Type Validation** to **Date**, or add **custom[date]** to **Validation Rules** manually. For example, use **validate[required,custom[date]]**.
 
 ### Past Date
 Use this rule to make sure data entered into the field is is older than a pre-entered date. To use this rule, set **Data Type Validation** of the field to **Past Date**, then look at **Validation Rules** setting, change the pre-inserted date to the date you want. For example **validate[custom[date],past[17/01/2025]]**. You can also insert the rule manually into Validation Rules, for example **past[17/01/2025]**, just please make sure the date (in this example **17/01/2025**) must match the format configured in **Date Picker Format** config option.
@@ -83,6 +83,6 @@ Use this rule to make sure data entered into the field is contains only number a
 Use this rule to make sure data entered into the field is contains only number and space characters. To use this rule, set **Data Type Validation** of the field to **Only Letter and Number characters, No Space** or insert **custom[onlyLetterNumber]** manually to **Validation Rules**  setting of the field. For example **validate[required,custom[onlyLetterNumber]]**
 
 ### Equals
-Use this rule to make sure data entered into the field is equals with data entered on other field. For example, to make sure users enter the right email on registration form, you might want to create a new field called confirm_email to ask users to re-type the email into second field. Set **Validation Rules** of this new field to **equals[email]** will require data entered on both fields equal (replace email with name of any field you want)
+Use this rule to require a value that matches another field. For example, create a field named confirm_email and ask registrants to re-enter their email address. Set **Validation Rules** on confirm_email to **equals[email]** to require both entries to match. Replace email with the name of the field you want to compare.
 
 ![Client Side Validation Settings](client-validation-rules.png)

@@ -4,12 +4,12 @@ published: true
 media_order: eventbooking-full-event-notification.png
 ---
 
-This plugin allows sending notification emails to users you want (usually administrator) when an event is full.
+Notify selected recipients, typically administrators, when an event is full.
 
 ## Configure The Plugin
-To use this plugin, you need to go to **Extensions -> Plugins**, find and enable **Events Booking - Full Event Notification** plugin. It has following parameters, you can be changed it to meet your own need:
+Go to **Extensions -> Plugins** and enable **Events Booking - Full Event Notification**. Adjust the following settings as needed.
 
-- **Notification Emails**: Enter emails you want to receive notification, comma separated. For example email1@domain.com,email2@domain.com.
+- **Notification Emails**: Enter emails you want to receive a notification, comma separated. For example email1@domain.com,email2@domain.com.
 - **Subject**: Subject of the notification email.
 - **Message**: Message of the notification email.
 

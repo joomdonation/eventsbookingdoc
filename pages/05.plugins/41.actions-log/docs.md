@@ -3,7 +3,7 @@ title: 'Actions Log'
 media_order: user_actions_log_eventsbooking.png
 ---
 
-**Action Log - Events Booking** allows you to monitor who performs what actions in Events Booking. Currently, the plugin allows logging the following actions:
+**Action Log - Events Booking** records who performs the following actions in Events Booking.
 - Add/Edit event.
 - Publish/Unpublish events.
 - Delete events.
@@ -12,5 +12,5 @@ media_order: user_actions_log_eventsbooking.png
 - Delete registrants.
 - Export registrants.
 
-To use this feature, you just need to go to **Extensions -> Plugins**, find and publish **Action Log - Events Booking** plugin. When the plugin is enabled, each time someone performs one of the actions above, it will be logged. You can then access to Users -> User Actions Log to see the logged actions.
+Go to **Extensions -> Plugins** and publish **Action Log - Events Booking**. The plugin records each of the actions listed above. To view the records, go to Users -> User Actions Log.
 

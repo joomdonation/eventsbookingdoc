@@ -6,12 +6,12 @@ taxonomy:
 media_order: 'countries-managemens.png,states-management.png'
 ---
 
-In a typical setup, on registration form of Events Booking, there are two **special fields**
+A typical Events Booking registration form includes two **special fields**.
 
-1. A **country field** which displayes list of countries to allow registrants to choose their country
-2. A **state field** which dislayes list of states from the selected country. When the country is changed, the list of states in the state field will also be updated / changed automatically
+1. A **country field** lets registrants select their country.
+2. A **state field** lists the states in the selected country. The list updates when the registrant changes the country.
 
-Sometime, you might want to add, update, remove a country or state to meet your own need. If so, please access to Evenst Booking, then **Setup -> Countries** and **Setup -> States** to update the countries / states list which you want to use in your setup
+To add, edit, or remove entries, open Events Booking and go to **Setup -> Countries** or **Setup -> States**.
 
 ![countries-managemens](countries-managemens.png "countries-managemens")
 

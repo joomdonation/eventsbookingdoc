@@ -3,7 +3,7 @@ title: 'User - Events Booking'
 media_order: user-events-booking.png
 ---
 
-This plugin allows deleting user's events and registration records when their account is deleted. To use it:
+This plugin can delete a user’s events and registration records when their account is deleted.
 
 1. Go to **System** -> **Plugins**, find and enable **User - Events Booking** plugin.
 2. Click on the plugin to edit, there are 3 parameters:

@@ -3,7 +3,7 @@ title: 'Refund Registration'
 media_order: refund-registrant.png
 ---
 
-Events Booking allows admin to refund for a registration from administrator area of your site. The following payment plugin supports refund:
+Administrators can issue registration refunds from the Joomla administrator area. The following payment plugins support refunds.
 
 - PayPal
 - PayPal Pro
@@ -12,7 +12,7 @@ Events Booking allows admin to refund for a registration from administrator area
 - Square Card
 - Mollie
 
-If you use these payment plugins and registrant use one of the payment plugin for processing payment, you can follow instructions below to process refund:
+If the registrant paid using one of these plugins, follow these steps to issue a refund.
 
 - Go to Events Booking -> Registrants
 - Click on the registration record you want to refund 

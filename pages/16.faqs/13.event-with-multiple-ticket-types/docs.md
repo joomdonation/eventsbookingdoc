@@ -3,12 +3,12 @@ title: 'Event With Multiple Ticket Types'
 published: true
 ---
 
-There are two ways to create an event with different ticket types, each ticket types with it's own price
+You can offer multiple ticket types at different prices in two ways.
 
 **1. Use Custom Fee Fields**
 
-The idea is you can create custom fee fields to allow users to choose these ticket options and charge them different fee base on their selection. See [https://docs.joomdonation.com/eventsbooking/basic-setup/custom-fields/custom-fee-fields#radio-list-single-dropdown-custom-field-type](/basic-setup/custom-fields/custom-fee-fields#radio-list-single-dropdown-custom-field-type) for detailed documentation
+Create a custom fee field so registrants can choose a ticket type and pay the corresponding fee. See [https://docs.joomdonation.com/eventsbooking/basic-setup/custom-fields/custom-fee-fields#radio-list-single-dropdown-custom-field-type](/basic-setup/custom-fields/custom-fee-fields#radio-list-single-dropdown-custom-field-type) for setup instructions.
 
 **2. Use Ticket Types Plugin**
 
-If you want more advanced options: Each ticket types with it own price, capacity...., you can use ticket types plugin. See [https://docs.joomdonation.com/eventsbooking/plugins/ticket-types](/plugins/ticket-types) for detailed documentation.
+Use the ticket types plugin to configure a separate price and capacity for each ticket type. See [https://docs.joomdonation.com/eventsbooking/plugins/ticket-types](/plugins/ticket-types) for setup instructions.

@@ -3,4 +3,4 @@ title: 'Reminder Email'
 visible: true
 ---
 
-For this email, you can use any tags in [Common Tags](/email-tags/common-tags)
+You can use any tag listed in [Common Tags](/email-tags/common-tags) in this email.

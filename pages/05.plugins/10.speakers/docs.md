@@ -3,12 +3,12 @@ title: Speakers
 media_order: 'speakers_display.png,speakers.png'
 ---
 
-This plugin allows you to add and display Speakers for an event, see [https://demo.joomdonation.com/eventsbooking/features/advanced-features/agendas-speakers-sponsors](https://demo.joomdonation.com/eventsbooking/features/advanced-features/agendas-speakers-sponsors), look at **Speakers**  section for a sample event which has speakers feature.
+Use this plugin to add speakers to an event and display them on the event page. For an example, see the **Speakers** section at [https://demo.joomdonation.com/eventsbooking/features/advanced-features/agendas-speakers-sponsors](https://demo.joomdonation.com/eventsbooking/features/advanced-features/agendas-speakers-sponsors).
 
 To use this feature:
 
 1. Go to **System -> Plugins**, find and publish the plugin **Events Booking - Speakers**.
-2. Now, when you add/edit event, you will see a new tab **Speakers** allowing to setup speakers for that event.
+2. When you add or edit an event, open **Speakers** to add speakers for that event.
 3. You can add any speakers you want for the event.
 
 Please note that on demo site, you will see that each speaker has social icons displayed to allow linking to his personal social profile. If you want to have it displayed like that, you will have to use HTML code for description of each speaker. Below are sample:

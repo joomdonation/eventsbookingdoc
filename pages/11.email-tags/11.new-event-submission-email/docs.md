@@ -3,11 +3,11 @@ title: 'New Event Submission Email'
 visible: true
 ---
 
-This is the email sent to admin and user when that user submit event from frontend of the site.
+Events Booking emails the administrator and the user when the user submits an event from the frontend.
 
 ## Email sent to administrator
 
-- Go to Events Booking -> Emails & Messages, look at **Submit Event Email Messages** tab, find and change the two items **Admin Email Subject** and **Admin Email Body** to meet your need.
+- Go to Events Booking -> Emails & Messages, look at **Submit Event Email Messages** tab, find and change the two items **Admin Email Subject** and **Admin Email Body** to suit your needs.
 - The following tags are supported:
 
 [USER_ID]
@@ -20,5 +20,5 @@ This is the email sent to admin and user when that user submit event from fronte
 
 ## Email sent to user
 
-- Go to Events Booking -> Emails & Messages, look at **Submit Event Email Messages** tab, find and change the two items **User Email Subject** and **User Email Body** to meet your need.
-- Supported Tags: Same with the email sent to administrator.
+- Go to Events Booking -> Emails & Messages, look at **Submit Event Email Messages** tab, find and change the two items **User Email Subject** and **User Email Body** to suit your needs.
+- Supported Tags: Same with the email sent to the administrator.

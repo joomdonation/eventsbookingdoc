@@ -2,11 +2,11 @@
 title: 'Code customization (override)'
 ---
 
-From version 2.10.2, Events Booking has a mechanism to allow you to override it's code (static methods, model, view, controller classes). So in case you have to customize Events Booking to meet your own need, you won't have to worry about upgrading to loosing this customization while updating to future releases of Events Booking anymore. Below you can see the details:
+Since version 2.10.2, Events Booking has supported code overrides for static methods and model, view, and controller classes. Overrides let you customize the extension while keeping your changes through updates.
 
 ## Override static methods (helper methods)
 
-Events Booking has some helper classes which you can see in components/com_eventbooking/helper folder. Currently, the following static methods can be overrided:
+Events Booking helper classes are in components/com_eventbooking/helper. You can override the following static methods.
 
 1. EventbookingHelper::formatCurrency
 2. EventbookingHelper::formatInvoiceNumber
@@ -108,7 +108,7 @@ class EventbookingHelperOverrideData extends EventbookingHelperRegistration
 
 ```
 
-4. Copy the original code of the method you want to override into the class you defined above and customize it to meet your need. Please note that these classes extends the original class, so you can call any (public/protected) methods in the parent class.
+4. Copy the original code of the method you want to override into the class you defined above and customize it to suit your needs. Please note that these classes extends the original class, so you can call any (public/protected) methods in the parent class.
 
 Also, if in the code of original method has code to check if method support override like this, you will have to remove it from copied code, otherwise, you will get error
 
@@ -143,7 +143,7 @@ class EventbookingControllerOverrideRegister extends EventbookingControllerRegis
 
 }
 ```
-4. Copy the original code of the method you want to override into the class you defined above and customize it to meet your need. Please note that these classes extends the original class, so you can call any (public/protected) methods in the parent class. See https://github.com/joomdonation/eventbooking-override-skeleton/blob/master/controller/override/register.php for sample of controller override
+4. Copy the original code of the method you want to override into the class you defined above and customize it to suit your needs. Please note that these classes extends the original class, so you can call any (public/protected) methods in the parent class. See https://github.com/joomdonation/eventbooking-override-skeleton/blob/master/controller/override/register.php for sample of controller override
 
 ## Override method in a model class
 
@@ -164,7 +164,7 @@ class EventBookingModelOverrideRegister extends EventBookingModelRegister
 
 }
 ```
-4. Copy the original code of the method you want to override into the class you defined above and customize it to meet your need. Please note that these classes extends the original class, so you can call any (public/protected) methods in the parent class. See https://github.com/joomdonation/eventbooking-override-skeleton/blob/master/model/override/register.php for a sample of override model classs.
+4. Copy the original code of the method you want to override into the class you defined above and customize it to suit your needs. Please note that these classes extends the original class, so you can call any (public/protected) methods in the parent class. See https://github.com/joomdonation/eventbooking-override-skeleton/blob/master/model/override/register.php for a sample of override model classs.
 
 ## Override method in a view class
 
@@ -185,4 +185,4 @@ class EventbookingViewOverrideRegisterHtml extends EventbookingViewRegisterHtml
 {
 }
 ```
-5. Copy the original code of the method you want to override into the class you defined above and customize it to meet your need. Please note that these classes extends the original class, so you can call any (public/protected) methods in the parent class. See https://github.com/joomdonation/eventbooking-override-skeleton/blob/master/view/override/register/html.php for sample of override view class
+5. Copy the original code of the method you want to override into the class you defined above and customize it to suit your needs. Please note that these classes extends the original class, so you can call any (public/protected) methods in the parent class. See https://github.com/joomdonation/eventbooking-override-skeleton/blob/master/view/override/register/html.php for sample of override view class

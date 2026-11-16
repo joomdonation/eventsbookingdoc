@@ -4,8 +4,8 @@ published: true
 media_order: registrants-export-invoices.png
 ---
 
-Sometime, you might want to export invoices for all or filtered registrants. To do that, from registrants management screen, filter registrants (base on event, status or event select the registration records you want) and press **Actions -> Export Invoices** button in the toolbar
+You can export invoices for all registrants or a filtered set. On the registrants management screen, filter by event or status, or select individual records. Then click **Actions -> Export Invoices** in the toolbar.
 
-When you do that, invoices of all filtered registrants will be exported into a single PDF file (each invoice in one page).
+Events Booking combines the invoices into a single PDF, with one invoice per page.
 
 ![registrants-export-invoices](registrants-export-invoices.png "registrants-export-invoices")

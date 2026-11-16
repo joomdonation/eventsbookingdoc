@@ -6,12 +6,12 @@ taxonomy:
 media_order: event-map.png
 ---
 
-Normally, on event detail page, users will have to click on the **Location Name** of the event to view that location on google map 
+By default, visitors click the **Location Name** on the event details page to open a map in Google Maps.
 
-If you want to display map directly on event detail page, please go to **System -> Plugins**, find and enable the plugin **Events Booking - Map**.  You might also want to change the following parameters if needed:
+To display a map directly on the event details page, go to **System -> Plugins** and enable **Events Booking - Map**. Adjust the following settings as needed.
 
 - **Map Height**: Control height of the map.
 - **Disable Scrollwheel**: Enable/Disable scroll-wheel.
-- **Output Position**: Control where the map is being displayed (before or after Register buttons).
+- **Output Position**: Control where the map is displayed (before or after Register buttons).
 
 ![event-map](event-map.png "event-map")

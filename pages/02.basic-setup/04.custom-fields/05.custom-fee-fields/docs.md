@@ -6,14 +6,14 @@ taxonomy:
 media_order: 'radio-custom-field-display.png,radio-fee-fields.png,text-custom-fee-field.png'
 ---
 
-Custom Fee Fields is a powerful feature in Events Booking. It allows you to charge your registrants additional fee (beside the price of the event) depends on the value(s) they enter/selected on a field on registration form. If you use custom fee field feature, please remember the following rules:
+Use Custom Fee Fields to charge a fee in addition to the event price based on what registrants enter or select on the registration form. The sections below explain the rules for each field type.
 
-1. Only the custom fields has **Fee Field** property set to **Yes** will be used to calculate fee for the subscription. 
-2. Custom Fee Fields only works for the following custom field types: **List (Single + Multiple Select), Checkboxes, Radio and Textbox**.
+1. To include a custom field in the registration fee calculation, set **Fee Field** to **Yes**.
+2. Custom Fee Fields supports these field types: **List (Single + Multiple Select), Checkboxes, Radio and Textbox**.
 3. On a registration form, there can be multiple custom fee fields. **TOTAL AMOUNT USER HAVE TO PAY = BASE REGISTRATION AMOUNT + SUM OF ALL FEE FIELDS**.
 
 ## Radio List + Single Dropdown Custom Field Type
-Let says you are creating a custom field which allow registrants to choose membership type on your site. So you create a custom field with following parameters:
+Suppose you want a custom field that lets registrants choose a membership type. Create the field with these settings.
 
 1. Values : **Basic Member (Free)**, **Silver Member (+10$)**, **Gold Member (+20$)**. Each item in one line.
 2. Default Values : **Silver Member (+10$)**.
@@ -37,23 +37,23 @@ Please note the mapping 1-1 between **Values** and **Fee Values** settings of th
 
 ## Checkboxes + MultiSelect Custom Field Type
 
-You can setup a same field as Radio Custom Fee field mentioned above. The only difference is the way the fee is calculated. For **Checkboxes** and **MultiSelect** custom field, the fee which subscribers will be charged will be total fee of all selected options. For example, with the above setup:
+Set up the field the same way as a Radio custom fee field. With a **Checkboxes** or **MultiSelect** field, Events Booking adds together the fees for every option the registrant selects. The example above produces the following charges.
 
-1. If registrants If users select **Basic Member** , they won't have to pay any additional fee.
-2. If registrants select **Silver Member** option, they will have to pay additional **10$**. 
-3. If registrants select **Gold Member** option, they will have to pay additional **20$**.
-4. If registrants select both **Silver Member** and **Gold Member**, they will have to pay additional **30$** (10$ for Silver Member and 20$ for Gold Member).
+1. Registrants who select **Basic Member** pay no additional fee.
+2. Registrants who select **Silver Member** pay an additional **$10**.
+3. Registrants who select **Gold Member** pay an additional **$20**.
+4. Registrants who select both **Silver Member** and **Gold Member** pay an additional **$30** ($10 for Silver Member and $20 for Gold Member).
 
 ## Textbox Custom Field Type
 
-Let say you want to create a text field called Donation to allow registrants to make additional donation for you (beside paying for their registration fee). You can then create a new custom field with the following setting:
+To let registrants make a donation in addition to paying their registration fee, create a text field called Donation with these settings.
 1. **Name** : eb_donation_amount
 2. **Title**: Donation Amount
 3. **Field Type**: **Text**
 4. **Fee Formula**: **[FIELD_VALUE]**
 5. **Fee Fied**: **Yes**.
 
-Now, any value registrants enter into this field will be added to total registration fee which registrants have to pay. For example, if they enter 10, 10$ will be added to total registration fee, if they enter 20, 20$ will be added to total registration fee and so on. As you can see **[FIELD_VALUE]** will be replaced with the value users entered in the field for calculating the fee in Fee Formula.
+Events Booking adds the amount entered in this field to the total registration fee. For example, entering 10 adds $10, and entering 20 adds $20. The Fee Formula uses the entered amount in place of **[FIELD_VALUE]**.
 
 ![Text Custom Fee Field](text-custom-fee-field.png "text-custom-fee-field")
 
@@ -61,8 +61,8 @@ Now, any value registrants enter into this field will be added to total registra
 
 Fee Formula is a bit difficult to understand. However, once you get it, you will see that is is very powerful for fee calculation.
 1. You can use **math operators : +, -, * , /** in the fee formula.
-2. When you use **[FIELD_VALUE]** tag in the fee formula, it will be replaced with the actual fee associated with that field for fee calculation:
-* If the field is a Text custom field, **[FIELD_VALUE]** will be replaced with the value subscribers enter on the textbox.
-* If the field is a single select field (Radio, Single Select box), **[FIELD_VALUE]** will be replaced with the fee** amount corresponding with the value** subscribers select for the field.
-* If the field is a multiple select field (Checkboxes, Multiple Select), **[FIELD_VALUE]** will be replaced with the total** fee values of all the options** which users select for that field.  
-3. You can also use a custom fee in fee formular with the syntax: **[NAME_OF_CUSTOM_FIELD_IN_UPPERCASE]**. For example, if you have a textbox custom field called **eb_quantity** to allow users to enter quantity of the items they want to purchase, you can use the tag **[EB_QUANTITY]** in the fee formula of any custom fields. Please note that when you use a custom field in fee formula, **it will be replaced with a value using the same rules with [FIELD_VALUE] tag mentioned above**.
+2. In a fee formula, **[FIELD_VALUE]** is replaced as follows.
+* For a Text field, **[FIELD_VALUE]** is replaced with the value the registrant enters.
+* For a single-select field (Radio or Single Select), **[FIELD_VALUE]** is replaced with the fee for the selected option.
+* For a multiple-select field (Checkboxes or Multiple Select), **[FIELD_VALUE]** is replaced with the sum of the fees for the selected options.
+3. To use another custom field in a fee formula, enter **[NAME_OF_CUSTOM_FIELD_IN_UPPERCASE]**. For example, if a text field named **eb_quantity** collects the number of items the registrant wants to buy, use **[EB_QUANTITY]** in a fee formula. Events Booking uses the same rules to determine the value of this tag as it does for [FIELD_VALUE].

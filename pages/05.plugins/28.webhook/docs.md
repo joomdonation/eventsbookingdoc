@@ -5,9 +5,9 @@ published: true
 media_order: 'eventbooking_webhook.png,event_webhook_settings.png'
 ---
 
-This plugin gives you a way to send registration data to an external URL via a POST request. Each time a registration record created and become Published/Paid, a POST request will be sent to the configured URL with all registration/event data. The external system can then uses that data in the way it wants.
+This plugin sends registration and event data to an external URL in a POST request when a new registration record reaches Published/Paid status. The receiving system can then use the data.
 
-If you want to use this feature, find the plugin **Events Booking - Webhook**, configure necessary parameters and enable it.
+To use the webhook, find **Events Booking - Webhook**, configure the required settings, and enable it.
 
 ## Plugin Parameters
 

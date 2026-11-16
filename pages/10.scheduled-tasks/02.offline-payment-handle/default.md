@@ -4,15 +4,15 @@ media_order: task-eventsbooking-offline-payment-handle.png
 published: true
 ---
 
-If you enable [**Offline Payment**](/basic-setup/payment-plugins/offline-payment) plugin to allow users to make payment for their registrations using Offline Payment method, you can use use this scheduled task to send emails to registrants to remind them to make payment for their registrations if payment is not received after certain number of days. It can also cancel registrations if users does not make payment after certain number of days.
+Use this task if you enable the [**Offline Payment**](/basic-setup/payment-plugins/offline-payment) plugin. It can remind registrants to pay if you have not received payment after a set number of days. It can also cancel registrations that remain unpaid after the interval you configure.
 
-1. Go to **System -> Plugins**, make sure **Task - Events Booking** plugin is enabled.
-2. Go to **System -> Scheduled Tasks**, press **New** button in the toolbar to create a new scheduled task for **Events Booking - Offline Payment Handle** task type.
-3. Setup all required parameters, save it.
+1. Go to **System -> Plugins** and make sure the **Task - Events Booking** plugin is enabled.
+2. Go to **System -> Scheduled Tasks**, click **New** in the toolbar to create a new scheduled task for **Events Booking - Offline Payment Handle** task type.
+3. Set the required parameters and save the task.
 
 
 ## Task Basic Fields
-This scheduled task should be run several times per day. Each time it runs, it will send process to 10 - 15 registrants, so you can setup **Basic Fields** to following values
+Run this task several times a day. Each run processes 10 to 15 registrants. Use the following values under **Basic Fields**.
 
 - **Execution Rule**: Set to **Interval, Hours**
 - **Interval in Hours**: Set to the number you want, for example, if you set it to 1, the task will be run every 1 hour.

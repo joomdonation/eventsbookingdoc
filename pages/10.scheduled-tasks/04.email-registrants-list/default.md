@@ -4,16 +4,16 @@ media_order: task-eventsbooking-email-registrants-list.png
 published: true
 ---
 
-This scheduled task automatically exports the registrants of each event to an Excel file and emails it to the administrators X days or hours before the event starts. To use this feature:
+Use this task to export an event’s registrants to Excel and email the file to administrators a set number of days or hours before the event starts.
 
-1. Go to **System -> Plugins**, make sure **Task - Events Booking** plugin is enabled.
-2. Go to **System -> Scheduled Tasks**, press **New** button in the toolbar to create a new scheduled task for **Events Booking - Email Registrants List** task type.
-3. Setup all required parameters, save it.
+1. Go to **System -> Plugins** and make sure the **Task - Events Booking** plugin is enabled.
+2. Go to **System -> Scheduled Tasks**, click **New** in the toolbar to create a new scheduled task for **Events Booking - Email Registrants List** task type.
+3. Set the required parameters and save the task.
 
 ![task-eventsbooking-email-registrants-list](task-eventsbooking-email-registrants-list.png "task-eventsbooking-email-registrants-list")
 
 ## Task Basic Fields
-Each time the task is executed, it will only send registrants list of one event. So if you have many events per day, this task should be run every 10 or 20 minutes for example, so you can setup **Basic Fields** to following values:
+The task sends one event’s registrant list each time it runs. If you have several events per day, set it to run every 10 or 20 minutes, for example. Use the following values under **Basic Fields**.
 
 - **Execution Rule**: Set to **Interval, Minutes**
 - **Interval in Minutes**: Set to the number you want, for example, if you set it to 10, the task will be run every 10 minutes.

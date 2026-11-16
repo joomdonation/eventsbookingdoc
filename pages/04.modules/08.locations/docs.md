@@ -4,13 +4,13 @@ media_order: mod_eb_locations.png
 visible: true
 ---
 
-Display list of locations to allow users to click on to view events from each location
+Visitors can select a location to see events there.
 
-This module displays listlist of locations to allow users to click on to view events from each location.To use this module, please create an instance of **Events Booking - Events By Location** module and publish it on a module position on your site template. 
+To use it, create an instance of **Events Booking - Events By Location** and publish it in a module position in your site template.
 
 ![Events Booking - Events By Location](mod_eb_locations.png)
   
-The up-coming events module has following parameters:
-1. **Number Locations**: Number of locations to be displayed on the module
-2. **Show number events**: If set to Yes, we will show number of events next to the location
-3. **Itemid**: Enter ID of the default menu item will be used generate SEF link to the locations in the module in case there is no menu item could be detected for the location. Something related to SEF router, leave it empty and the module will use default menu item.
+The module has the following parameters.
+1. **Number Locations**: Set how many locations to display.
+2. **Show number events**: Set to Yes to show the event count next to each location.
+3. **Itemid**: Enter the ID of the menu item to use for SEF links to locations in this module when Events Booking cannot find a matching menu item. Leave it blank to use the default menu item.

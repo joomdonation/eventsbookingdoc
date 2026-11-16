@@ -4,7 +4,7 @@ published: true
 media_order: 'create_new_project.png,enable_google_calendar_api.png,create-service-account.png,add-people-and-group.png,share-with-people.png,calendar_id.png,events-booking-google-calendar-plugin-params.png,category-calendar-mapping.png,google_sheet_settings_for_each_event.png'
 ---
 
-If you want to synchronize registrants of your events automatically to Google Spreadsheets, you can enable and use **Events Booking - Google Spreadsheet** plugin. Go to **System** -> **Plugins**, find and enable the plugin to use the integration. There are few setup steps needed for the synchronization to work:
+To synchronize event registrants with Google Sheets automatically, go to **System** -> **Plugins** and enable **Events Booking - Google Spreadsheet**. Then follow the steps below.
 
 ### Create a Google Cloud Project
 1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
@@ -41,7 +41,7 @@ If you want to synchronize registrants of your events automatically to Google Sp
 6. Rename the downloaded json file to be **service-account.json**, upload that file to **plugins/eventbooking/googlesheet/credentials** folder on your site.
 
 ### Share Your Google Spreadsheet with the Service Account
-To allow the system to write data into your Google Sheet, you need to share the sheet with the service account just like you would with any collaborator.
+Share the Google Sheet with the service account so it can write data to the sheet.
 
 1. Open your Google Sheet in your browser.
 2. In the top right corner, click the **Share** button.

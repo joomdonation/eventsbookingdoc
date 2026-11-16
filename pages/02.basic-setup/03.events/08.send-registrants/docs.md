@@ -3,15 +3,15 @@ title: 'Send Registrants'
 published: true
 ---
 
-This feature allows you to send registrants list of an event (in Excel Format) to email of administrators (and owner of event if **Send Notification Email To Event Creator** config option to **Yes**). To use this feature:
+Use this feature to email an event’s registrant list as an Excel file to administrators. The event owner also receives the list if **Send Notification Email To Event Creator** is set to **Yes**.
 
 1. Go to **Events Booking** -> **Emails & Messages**, look at **Registration Email Messages** tab, configure subject and body of the email:
 
 - Send Registrants List Email Subject
 - Send Registrants List Email Body
 
-You can use any tags listed in this page [Event Information Tags](/email-tags/common-tags#event-information-tags) to include event information in the email message. You can also use [TOTAL_REGISTRANTS] tag to show total number registrants of the event in the email.
+Use the [Event Information Tags](/email-tags/common-tags#event-information-tags) to include event details. Use [TOTAL_REGISTRANTS] to include the total number of registrants.
 
-2. Go to Events Booking -> Events, check on the checkbox next to the events you want to send registrants list to administrator,  and press **Actions -> Send Registrants** button in the toolbar.
+2. Go to Events Booking -> Events, select the checkboxes for the events, and click **Actions -> Send Registrants** in the toolbar.
 
-When you do that, the system will export registrants of each event to an excel file and send it to administrators (configured in Notification Emails settings inside the event or in Events Booking configuration) and the creator of the event (if configured as mentioned above)
+Events Booking exports each event’s registrants to a separate Excel file. It sends the file to the addresses in Notification Emails in the event or in Events Booking configuration, and to the event creator if you enabled that option.

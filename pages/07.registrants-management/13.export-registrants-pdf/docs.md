@@ -4,7 +4,7 @@ published: true
 media_order: registrants-export-pdf.png
 ---
 
-Beside allow export registrants into Excel, Events Booking also allows you to export registrants into a simple PDF file. Similar to [Export Registrants](/registrants-management/export-registrants), you can filter registrants you want to export (for example, select an event, choose status filter or event check on the checkboxes next to the registration record before clicking on **Actions -> Export PDF** button in the toolbar to export these filtered registrants into PDF.
+Use **Actions -> Export PDF** in the toolbar to create a PDF list of registrants. As with [Export Registrants](/registrants-management/export-registrants), you can filter by event or status, or select individual records before exporting.
 
 ![registrants-export-pdf](registrants-export-pdf.png "registrants-export-pdf")
 

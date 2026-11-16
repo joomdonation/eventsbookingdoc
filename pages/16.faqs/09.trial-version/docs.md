@@ -3,4 +3,4 @@ title: 'Do you have trial version of the extension?'
 visible: true
 ---
 
-No, we do not have trial version of the extension for you to try. However, we do provide money back warranty, so if you want, you can go ahead to purchase a copy of the extension to try. If it's not working as expected, you can request us for refund.
+Events Booking is available for purchase with a money-back guarantee. If the extension does not work as expected, you can request a refund. A trial version is unavailable.

@@ -4,11 +4,11 @@ media_order: mini-calendar.png
 visible: true
 ---
 
-This module simply display dates in a certain month. Users can navigate to the month/year they want. If a certain day in the month have events, users can click on it to see these events and process the registration if they want. To use this module, please create an instance of **Events Booking - Mini Calendar** module and publish it on a module position on your site template
+The mini calendar displays a month at a time. Visitors can browse by month or year and click a date to see its events and register. To use it, create an instance of **Events Booking - Mini Calendar** and publish it in a module position in your site template.
 
 ![Mini Calendar](mini-calendar.png)
 
 ## Module parameters
-- **Default Month**: Select the month will be displayed when the module first loaded. After it is loaded, users can navigate to next/previous month.
+- **Default Month**: Select the month to show initially. Visitors can then move to the next or previous month.
 - **Select Category**: Choose the category you want to display events from. If no category is selected, events from all categories will be displayed.
-- **Itemid**: Enter ID of the default menu item will be used generate SEF link to the events in this module in case there is no menu item could be detected for the event. Something related to SEF router, leave it empty and the module will use default menu item
+- **Itemid**: Enter the ID of the menu item to use for SEF links to events in this module when Events Booking cannot find a matching menu item. Leave it blank to use the default menu item.

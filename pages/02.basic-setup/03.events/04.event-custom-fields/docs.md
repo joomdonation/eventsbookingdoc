@@ -6,11 +6,11 @@ taxonomy:
 media_order: 'event-custom-fields.png,event-extra-information.png'
 ---
 
-**Events Booking** allows creating custom fields to display more information about the event if needed (beside basic information such as title, event date, location, description....). For example, if you create an event which has different price for different types of registrant (Adult, Children...), you might want to create custom fields to show these price on events list and event detail page. If so, you can follow the steps below to setup it:
+Use event custom fields to display information beyond the title, date, location, and description. For example, if an event has separate prices for adults and children, you can use fields to show those prices in the event list and on the event details page.
 
 1. Go to **Events Booking** => **Configuration**: Set **Enable Event Custom Fields** config option to **Yes**
-2.  By default, Events Booking only show these custom fields on event detail page. If you want to show these custom fields on events list page, find and set the config option **Show event custom fields in category view** to **Yes**.
-3. Go to **Events Booking -> Configuration**, look at **Event Custom Fields** tab, define custom fields you want (the custom fields need to be defined via an XML file in this case). If you do not see the tab, please go to **Extensions** -> **Plugins**, find and enable one of the two plugins **Editor - CodeMirror** or **Editor - None**. You can also open the file **components/com_eventbooking/fields.xml** and edit directly if you want. There are two custom fields defined by default : A textbox custom field and a textarea custom field. You can define similar custom fields in the fields. The list of supported custom field types can be found at http://docs.joomla.org/Standard_form_field_types . For your need, I believe you only need to use the following field types:
+2.  Events Booking displays event custom fields on the event details page by default. To show them in event lists, set **Show event custom fields in category view** to **Yes**.
+3. Go to **Events Booking -> Configuration** and open **Event Custom Fields** to define your fields in XML. If the tab is missing, go to **Extensions** -> **Plugins** and enable **Editor - CodeMirror** or **Editor - None**. You can also edit **components/com_eventbooking/fields.xml** directly. Use the default text box and text area definitions as examples. For all supported field types, see http://docs.joomla.org/Standard_form_field_types . The following types cover common uses.
 * **Text** ([http://docs.joomla.org/Text_form_field_type](http://docs.joomla.org/Text_form_field_type))
 * **Textarea** ([http://docs.joomla.org/Textarea_form_field_type](http://docs.joomla.org/Textarea_form_field_type))
 * **Checkboxes** ([http://docs.joomla.org/Checkboxes_form_field_type](http://docs.joomla.org/Checkboxes_form_field_type))
@@ -18,10 +18,10 @@ media_order: 'event-custom-fields.png,event-extra-information.png'
 
 ![Event Custom Fields](event-custom-fields.png "Event Custom Fields")
 
-4. Now, when you add/edit an event, you will see a new tab called **Extra Information**. You can enter value for the custom fields you created in this tab and these information will be showed in the frontend (on the category page and event details page) when users browse for events.
-5. If you want to show custom the custom field for certain **Access Level**, you can use **access** attribute. For example, **access="1"** will make the fields visible to everyone (**Public**), **access="2"** will make the field visible to everyone has **Registered** access level, **access="6"** will make the field visible to everyone has **Super Users** access level.
-5. Sometime, you would want to use a field in email or in invoice, ticket..., not being displayed to users when they view your event. In that case, you can handle it using **show** attribute. Just enter **show="false"** or **show="0"** into that field and it won't be displayed. 
-6. On a multilingual website, you might want to show the custom field for certain language only, for that use **language** attribute. Add **language="en-GB"** to the custom field definition will make the field show for English language only.
+4. When you add or edit an event, open the **Extra Information** tab and enter values for your custom fields. Visitors will see the values on the category page and event details page according to your settings.
+5. To control who can see a custom field, use the **access** attribute. For example, **access="1"** makes it visible to everyone (**Public**), **access="2"** to users with **Registered** access, and **access="6"** to users with **Super Users** access.
+5. To use a field in an email, invoice, or ticket without displaying it on the event page, set its **show** attribute to **show="false"** or **show="0"**.
+6. On a multilingual site, use the **language** attribute to show the field for one language only. For example, **language="en-GB"** displays it in English only.
 
 ![Extra Information](event-extra-information.png)
 

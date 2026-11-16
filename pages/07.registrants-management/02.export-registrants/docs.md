@@ -4,41 +4,41 @@ media_order: 'export-xlsx.png,export-registrants-settings.png,export-templates-m
 visible: true
 ---
 
-Events Booking allow you to export registrants of one or all events to Excel (XLSX) file. On Registrants Management screen, you can press **Actions -> Export (XLSX)** button in the toolbar to export registrants from one selected event or from all events. Note that, before pressing Export button, you can filter registrants data you want and only registrants meet the filter will be exported:
+Use **Actions -> Export (XLSX)** in the Registrants Management toolbar to export registrants to an Excel (XLSX) file. Select an event to export its registrants, or leave the event filter blank to include all events. Only records that match the active filters are exported.
 
-- If you only want to export registrants from one event, select that event from Events filter dropdown.
-- If you only want to export registrants with certain Status (Pending/Paid/Cancelled), you can choose that status from Status filter dropdown.
-- If you only want to export registrants with checked in status (Checked-in, not Checked-in), you can choose that checked-in status from Checked in filter dropdown.
-- You can also choose date range, enter keyword in the search box to search for registrants you want before export
+- To export registrants for one event, select it in the Events filter.
+- To export registrants with a particular status, select Pending, Paid, or Cancelled in the Status filter.
+- To export registrants by check-in status, select Checked-in or not Checked-in in the Checked in filter.
+- You can also choose date range, enter keyword in the search box to find registrants you want before export
 
 ![export-xlsx](export-xlsx.png "export-xlsx")
 
 ## Choose Type Of Records To Export
-If you enable group registration in your system, there are two config options which you should care about (go to **Events Booking** -> **Configuration**, look at **Export Registrants Settings** tab, find and change it if needed):
+If you use group registration, review these two options under **Events Booking** -> **Configuration** on the **Export Registrants Settings** tab.
 
-1. If you want to include group billing records in the exported Excel file, set **Export Group Billing Records** config option to **Yes**, otherwise, set it to **No**.
-2. If you want to include group members records in the exported Excel file, set **Export Group Member Records** config option to **Yes**, otherwise, set it to **No**.
+1. Set **Export Group Billing Records** to **Yes** to include group billing records in the Excel file, or **No** to exclude them.
+2. Set **Export Group Member Records** to **Yes** to include group member records in the Excel file, or **No** to exclude them.
 
 ## Choose Data/Columns For The Export
 
-1. For custom fields, if you want to hide any fields in the Registrants Export, access to **Events Booking**, then **Setup** -> **Custom Fields**, click on that custom field to edit, set **Hide On Export** parameter to **Yes**.
+1. To exclude a custom field, go to **Events Booking** -> **Setup** -> **Custom Fields**, edit the field, and set **Hide On Export** to **Yes**.
 
-2. For other fields, You can also choose to include/exclude fields you want. Go to **Events Booking -> Configuration**, look at  **Export Registrants Settings** tab, and change settings to meet your need.
+2. For other fields, You can also choose to include/exclude fields you want. Go to **Events Booking -> Configuration**, look at  **Export Registrants Settings** tab, and change settings to suit your needs.
 
 ![export-registrants-settings](export-registrants-settings.png "export-registrants-settings")
 
 ## Export Templates
-If it is needed, you can setup different export templates, each export template contains the fields in the order you want. Then when you export Registrants to Excel, you can choose to use Default Template (use the settings above) or any custom export template to have the result you want.
+You can create export templates with different fields and field orders. For each Excel export, choose a custom template or use Default Template to apply the settings above.
 
 ### Setup Export Templates
 
-In administrator area, access to Events Booking, then **Setup** -> **Export Templates** to manage export templates and setup any number of export template you want. For each export template, you can define the fields/data you want to include and the order of these fields.
+In the administrator area, go to Events Booking -> **Setup** -> **Export Templates**. Create as many templates as you need and choose which fields to include and in what order.
 
 ![export-templates-management](export-templates-management.png "export-templates-management")
 
 ![new-export-template](new-export-template.png "new-export-template")
 
 ### Choose Export Template To Export Registrants
-If you setup export templates, when you export registrants, you will be asked to choose the template you want and registrants will be exported using the selected template. You can choose to use Default export template beside the additional templates you added.
+When you export registrants, Events Booking prompts you to choose a template. Select the Default export template or one of the templates you created.
 
 ![select-export-template](select-export-template.png "select-export-template")

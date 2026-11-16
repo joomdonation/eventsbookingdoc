@@ -3,4 +3,4 @@ title: Cities
 visible: true
 ---
 
-Display list of cities to allow users to click on to view events from a city
+This module lists cities. Visitors can select a city to see its events.

@@ -3,32 +3,32 @@ title: 'SMS Reminders'
 media_order: 'plug_eventbookingsms_nexmo.zip,plug_eventbookingsms_twilio.zip,sms-reminder-settings.png,eventsbooking-sms-reminder-plugin.png'
 ---
 
-**Events Booking** alllows you to to send **SMS Reminders** emails to registrants X-days before/after event start date to remind them about the event so that they won't forgot about it. It also allows sending SMS message to notify administrators when there is someone registers for events on your website. To use this feature:
+**Events Booking** can send **SMS Reminders** to registrants a set number of days before or after an event starts. It can also send administrators a text message when someone registers.
 
 ## Configure events to allow sending SMS Reminders
-Events Booking allows you to send up to 3 SMS reminders to registrants of your events before or after your event started. When you add/edit an event, you will see the following settings which use to control SMS Reminders:
+You can configure up to three SMS reminders per event. When adding or editing an event, use the following settings.
 
 **Send First Reminder**
 **Send Second Reminder**
 **Send Third Reminder**
 **Enable SMS**
 
-Enter the number you want for each setting (leave it empty or 0 to disable sending SMS reminder), choose to send before/ after event started, depends on your need. Some notes:
+For each reminder, enter the number of days and choose whether to send it before or after the event starts. Leave the value blank or enter 0 to disable that reminder.
 
-- You need to set **Enable SMS** to **Yes** to enable SMS reminder for the event.
-- The settings **Send First Reminder**, **Send Second Reminder**, **Send Third Reminder** are shared between SMS reminders and email reminders (we do not have separate parameters for SMS Reminders)
+- Set **Enable SMS** to **Yes** to send SMS reminders for this event.
+- **Send First Reminder**, **Send Second Reminder**, and **Send Third Reminder** apply to both SMS and email reminders.
 
 ![sms-reminder-settings](sms-reminder-settings.png "sms-reminder-settings")
 
 ## Configure SMS Reminder Messages
-Events Booking generate default sms reminder messages when you first install the extension. However, it is good to review and change these default messages to meet your own need if needed. To do that, go to **Events Booking**, then **Setup** -> **Emails & Messages**, find and change the following items to meet your need:
+Events Booking creates default SMS reminders during installation. To edit the messages, go to **Events Booking** -> **Setup** -> **Emails & Messages** and find the following items.
 
 *  **New Registration SMS**
 *  **First Reminder SMS**
 *  **Second Reminder SMS**
 *  **Third Reminder SMS**
 
-You can use the following tags in the email messages:
+You can use the following tags in the SMS messages.
 - [EVENT_DATE]
 - [EVENT_END_DATE]
 - [EVENT_ID]
@@ -50,19 +50,19 @@ You can use the following tags in the email messages:
 
 ## Publish and configure System - Events Booking SMS plugin
 
-To have system send reminder email to registrants, you need to go to Extensions -> Plugins, find and publish **System - Events Booking SMS** plugin. The plugin will be run every 20 minutes to check and send reminder emails to registrants. It has following parameters, you can review and change it to meet your own need if needed
+Go to Extensions -> Plugins and publish **System - Events Booking SMS**. The plugin checks for SMS reminders to send every 20 minutes. Adjust the following settings as needed.
 
-- **Administrator Phone Numbers**: Enter administrator phone numbers which you want to receive SMS notification when someone registers for your event. Multiple phone numbers are supported, just separate these numbers by comma.
+- **Administrator Phone Numbers**: Enter the phone numbers that should receive an SMS when someone registers for an event. Separate multiple numbers with commas.
 - **Number Registrants**: How many registrants the system should send reminder each time the plugin runs. You should not set it to a high value to avoid timeout during sending emails (or reach the mail limit your hosting allow to be sent each hour). Default value is 15, should be enough.
-- **Time  Ranges**: By default, the system will check and send SMS reminder to registrants every 20 minutes, that means registrants will receive SMS reminders at random time in the day (could be midnight). To prevent that, you can setup the time ranges you want to send reminder emails. 
-- **Send To Group Billing**: Set to Yes to send reminder to group billing person (the person who making the group registration for multiple group members)
-- **Send To Group Members**: Set to Yes to send reminder to group members in group registration
-- **Send To Unpublished Events**: If set to Yes, the system will send SMS Reminders  to registrants even that event was unpublished (For example, you configure the system to unpublish the event will it is full for some reasons)
+- **Time  Ranges**: The plugin checks for SMS reminders every 20 minutes, so messages could go out at any time of day. Set the time ranges during which it can send reminders.
+- **Send To Group Billing**: Set to Yes to send a reminder to the person who made the group registration.
+- **Send To Group Members**: Set to Yes to send reminders to individual group members.
+- **Send To Unpublished Events**: Set to Yes to send SMS reminders even if the event is unpublished. For example, you might automatically unpublish events when they reach capacity.
 
 ![eventsbooking-sms-reminder-plugin](eventsbooking-sms-reminder-plugin.png "eventsbooking-sms-reminder-plugin")
 
 ## Publish And Configure SMS Plugin
-To be able to send SMS reminder, you need to use a SMS gateway. As of right now, Events Booking supports follow SMS gateways:
+To send SMS reminders, configure one of the supported SMS gateways.
 
 - Clickatel [https://www.clickatell.com/](https://www.clickatell.com/)
 - Clockwork [https://www.clockworksms.com/](https://www.clockworksms.com/)
@@ -70,7 +70,7 @@ To be able to send SMS reminder, you need to use a SMS gateway. As of right now,
 - Nexmo (now Vonage) [https://www.vonage.com/](https://www.vonage.com/)
 - Twilio [https://www.twilio.com//](https://www.twilio.com/)
 
-Depends on the SMS gateway you are using, you need to enable and configure the related SMS Plugin (go to Extensions -> Plugins, find the plugin, enter necessary paramerers and enable it):
+Go to Extensions -> Plugins, open the plugin for your gateway, enter the required settings, and enable the plugin.
 
 - **Events Booking SMS - Clickatell**
 - **Events Booking SMS - Clockwork**
@@ -78,7 +78,7 @@ Depends on the SMS gateway you are using, you need to enable and configure the r
 - **Events Booking SMS - Textlocal**
 - **Events Booking SMS - Twilio**
 
-Due to the size of the SMS plugin, two plguins **Events Booking SMS - Nexmo** and **Events Booking SMS - Twilio** are not shipped in Events Booking package. You can download these plugins and install it manually from the links below case you want to use it
+The **Events Booking SMS - Nexmo** and **Events Booking SMS - Twilio** plugins are large, so they are available as separate downloads. To use either plugin, download it below and install it manually.
 
 [plug_eventbookingsms_nexmo.zip](plug_eventbookingsms_nexmo.zip)
 
@@ -88,13 +88,13 @@ Due to the size of the SMS plugin, two plguins **Events Booking SMS - Nexmo** an
 ## Use Cronjob To Send SMS Reminders
 By default, Events Booking uses a system plugin to trigger sending reminder emails. It's easy to setup (just need to publish the **Events Booking - Reminder** plugin), however, it also has some downside:
 
-- It requires there is someone access to your site to trigger sending reminder process.
-- The time reminder is sent is random (depends on the time someone access to your site). If you only want the reminders be sent at midnight everyday, it won't be possible.
+- A visit to your site triggers the reminder process.
+- Reminders go out when someone visits your site. You cannot use this method to send reminders at a fixed time such as midnight every day.
 
-If you want to address these limitation, you can setup cronjob (For example, you want the system to send reminder at 3pm every day), you can setup cron job:
+To send reminders on a schedule, such as every day at 3 p.m., set up a cron job.
 
-1. Go to Extensions -> Plugins, find the plugin **System - Events Booking SMS**, click on it to edit
+1. Go to Extensions -> Plugins and open **System - Events Booking SMS**.
 2. Find the parameter **Trigger Reminder Code**, set it to a secret string you want, for example **runsmsreminder**.
-3. Setup a cron job to make a request to this url https://domain.com/index.php?trigger_reminder_code=runsmsreminder (of course https://domain.com/ needs to be replaced with url of your site and **runsmsreminder** will need to be the sam with the string you entered in Trigger Reminder Code parameter in the plugin.
+3. Set up a cron job to request https://domain.com/index.php?trigger_reminder_code=runsmsreminder . Replace https://domain.com/ with your site’s URL and **runsmsreminder** with the value you entered in Trigger Reminder Code.
 
-By that setup, your server will run the cron job, trigger sending reminder process at pre-determined time in the day (depends on your cron job setup).
+Your server now checks for reminders at the time you set in the cron job.

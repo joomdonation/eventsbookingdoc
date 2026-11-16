@@ -5,7 +5,7 @@ published: true
 media_order: checked_in_notification.png
 ---
 
-This plugin allows sending email notification after they are successfully being checked in. Beside notification purpose, the email could also be used to send them additional resources after checked in if needed (for example, link to private resources which is only accessible to checked in registrants)
+Send an email to registrants after they check in. The email can confirm check-in and include additional materials, such as a link to a resource available only to checked-in registrants.
 
 1. Go to **System** -> **Plugins**, find and enable the plugin **Events Booking - Checked-in Notification**. ick on the plugin to edit.
 2. Enter data for the following parameters:

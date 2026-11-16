@@ -3,10 +3,10 @@ title: 'Tickets PDF'
 media_order: 'ticket-settings.png,event-ticket-settings.png'
 ---
 
-Events Booking allow you to design, generate PDF tickets and send it to registrants when they register for your event. Registrants can then print that ticket, bring it to the event and uses it for checking in.
+Design and generate PDF tickets to send to registrants when they sign up for an event. They can print the ticket and bring it to the event for check-in.
 
 ## Enable Tickets PDF feature
-Tickets PDF is disabled by default. If you want to use this feature, please go to Events Booking -> Configuration, look at **Tickets Settings** tab, set **Activate Tickets PDF** config option to Yes. You can also setup some other parameters of the ticket such as Page Format, Page Orientation, Background image....
+PDF tickets are disabled by default. To enable them, go to Events Booking -> Configuration, open **Tickets Settings**, and set **Activate Tickets PDF** to Yes. You can also set the Page Format, Page Orientation, and Background image.
 
 ![ticket-settings](ticket-settings.png "ticket-settings")
 
@@ -21,7 +21,7 @@ Below are list of all the tags which you can use to design your ticket
 ### Event Information tags
 - [EVENT_TITLE]
 - [EVENT_DATE]
-- [EVENT_DATE_DATE] (show date of event without time)
+- [EVENT_DATE_DATE] (event date without the time)
 - [EVENT_DATE_TIME]
 - [EVENT_END_DATE]
 - [EVENT_END_DATE_DATE]
@@ -35,10 +35,10 @@ Below are list of all the tags which you can use to design your ticket
 - [LOCATION_NAME]
 
 ### Registration information
-- [ID] (ID of the registration record)
+- [ID] (registration record ID)
 - [FIRST_NAME]
 - [LAST_NAME]
-- [NAME] (combination of first_name + last_name)
+- [NAME] (first_name and last_name combined)
 - Any custom fields using the syntax [NAME_OF_FIELD_IN_UPPERCASE], for example, if you have a custom field name registration_type, then the tag is [REGISTRATION_TYPE]
 - [COUPONCODE]
 - [USERNAME]
@@ -57,7 +57,7 @@ Below are list of all the tags which you can use to design your ticket
 - [PAYMENT_DATE]
 - [TRANSACTION_ID]
 - [REGISTRATION_STATUS]
-- [TICKET_TYPES] (if you are using Ticket Types feature)
+- [TICKET_TYPES] (if you use the Ticket Types feature)
 
 ### Tickets information
 - [TICKET_NUMBER]
@@ -72,5 +72,5 @@ Below are list of all the tags which you can use to design your ticket
 ## Deliver PDF tickets to registrants
 1. Go to Events Booking -> Configuration, look at Tickets Settings tab, find the config option **Send tickets via email**, set it to **Yes** and tickets will be generted and send to registrant's email
 2. If you don't want to deliver the ticket via email, you can edit the email message which is sent to registrants, insert **[DOWNLOAD_TICKET_LINK]** . Then registrants can click on the link to download the ticket
-3. If registrants have an account on your website, they can login, access to Registration History to see their registration history and download PDF ticket from there
+3. If registrants have an account on your website, they can log in, access to Registration History to see their registration history and download PDF ticket from there
 4. You can configure the system to send [reminder email ](/basic-setup/auto-reminder) to your registrants. In the email, you can insert **[DOWNLOAD_TICKET_LINK]** tag to send link to download ticket to registrant 

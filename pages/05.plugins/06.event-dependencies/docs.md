@@ -8,7 +8,7 @@ media_order: event-dependencies.png
 
 You might have an event which depends on other events. That mean users need to register for the other events first before they are allowed to register for the main event. That could be handled using **Events Booking - Event Dependencies** plugin
 
-1. Login to back-end of your site as a super admin account.
+1. Log in to the administrator area of your site as a super admin account.
 2. Go to **System -> Plugins**, find and enable the **Events Booking - Event Dependencies** plugin.
 3. Now, when you add/edit an event, you will see a new tab called **Dependency Events**. It has two parameters:
 

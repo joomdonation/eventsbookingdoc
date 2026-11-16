@@ -2,12 +2,12 @@
 title: 'Database error after updating to latest version'
 ---
 
-Sometime, after updating from old version to latest version of the extension, you see an SQL error while working with the extension. The reason is because in new version, the extension add some fields to database and for some reason, upgrade was not success and these fields are not added. To solve this issue, you can:
+An SQL error after an update can indicate that the database is missing fields added by the new version. Follow these steps to update the schema.
 
-1. Login to administrator area of your site
-2. Access to Events Booking, then Tools -> Fix Database Schema.
+1. Log in to the administrator area of your site
+2. Open Events Booking, then Tools -> Fix Database Schema.
 
-After that, the database schema will be updated to latest version and you should not get error anymore. You can also run that tool by access to this URL directly after login to administrator area of your site:
+The tool updates the database schema to the latest version. You can also run it by opening the following URL after logging in to your site’s administrator area.
 
 https://domain.com/administrator/index.php?option=com_eventbooking&task=update.update
 

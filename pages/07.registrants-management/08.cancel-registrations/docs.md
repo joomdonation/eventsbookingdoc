@@ -4,10 +4,10 @@ published: true
 media_order: registrants-cancel-registration.png
 ---
 
-Sometime, you will need to cancel some of registrations for your event. To do that, there are two ways:
+You can cancel registrations for an event in either of the following ways.
 
 - Edit the registration record, change **Registration Status** to **Cancelled**
-- Or from Registrants Management screen, check on the checkbox next to the registration records, and press **Actions -> Cancel Registrations** button in the toolbar.
+- Or from Registrants Management screen, select the checkbox next to the registration records, and click **Actions -> Cancel Registrations** in the toolbar.
 
 ![registrants-cancel-registration](registrants-cancel-registration.png "registrants-cancel-registration")
 

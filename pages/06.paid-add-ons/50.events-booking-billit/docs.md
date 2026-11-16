@@ -4,7 +4,7 @@ published: true
 media_order: 'plugin_params.png,data_mapping.png'
 ---
 
-This plugin integrates with https://www.billit.eu/ API to generate Peppol-compliant invoices  when users register for your events. Once a registration payment is successfully processed, the plugin sends the necessary registration and payment details to the Billit API, and a corresponding invoice is created in your Billit account. 
+This plugin uses the Billit API (https://www.billit.eu/) to generate Peppol-compliant invoices. After a registration payment succeeds, it sends the registration and payment details to Billit, which creates an invoice in your account.
 
 If you are using Events Booking in a country which requires Peppol invoices, please purchase the plugin at https://joomdonation.com/joomla-extensions/events-booking-joomla-events-registration.html (look at Paid Add-ons tab), install, and enable **Events Booking - Billit** plugin.
 

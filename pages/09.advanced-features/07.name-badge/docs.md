@@ -4,7 +4,7 @@ published: true
 media_order: 'name_badge_settings.png,event_name_badge_settings.png'
 ---
 
-**Events Booking** allow you to design, generate **Name Badges** and sends it to registrants when they come and attend your events. If you need this feature, please follow instructions below to setup and use it.
+Use **Events Booking** to design and generate **Name Badges** for registrants attending your events. Follow these steps to set up the feature.
 
 This feature is not yet available on Public Release. I write the documentation here quickly to guide potential customer to use and get feedback from them and we might include this in core package in the future.
 
@@ -27,7 +27,7 @@ Below are list of all the tags which you can use to design your certificate
 ### Event Information tags
 - [EVENT_TITLE]
 - [EVENT_DATE]
-- [EVENT_DATE_DATE] (show date of event without time)
+- [EVENT_DATE_DATE] (event date without the time)
 - [EVENT_DATE_TIME]
 - [EVENT_END_DATE]
 - [EVENT_END_DATE_DATE]
@@ -41,10 +41,10 @@ Below are list of all the tags which you can use to design your certificate
 - [LOCATION_NAME]
 
 ### Registration information
-- [ID] (ID of the registration record)
+- [ID] (registration record ID)
 - [FIRST_NAME]
 - [LAST_NAME]
-- [NAME] (combination of first_name + last_name)
+- [NAME] (first_name and last_name combined)
 - Any custom fields using the syntax [NAME_OF_FIELD_IN_UPPERCASE], for example, if you have a custom field name registration_type, then the tag is [REGISTRATION_TYPE]
 - [COUPONCODE]
 - [USERNAME]
@@ -63,15 +63,15 @@ Below are list of all the tags which you can use to design your certificate
 - [PAYMENT_DATE]
 - [TRANSACTION_ID]
 - [REGISTRATION_STATUS]
-- [TICKET_TYPES] (if you are using Ticket Types feature)
+- [TICKET_TYPES] (if you use the Ticket Types feature)
 - [REGISTER_DATE]
 
 
 ## Download Name Badge For Registrants
-You can go to Events Booking -> Registrants, filter for the Registration Records you want to generate Name  Badge, then click on **Actions -> Download Name Badges** button in the toolbar to generate Name Badges for these filter registrants. If you want to download badges for certain registrants only, check on the checkbox next to the registration records you want before clicking on Download Name Badges button.
+You can go to Events Booking -> Registrants, filter for the Registration Records you want to generate Name  Badge, then click the **Actions -> Download Name Badges** button in the toolbar to generate Name Badges for these filter registrants. If you want to download badges for certain registrants only, select the checkbox next to the registration records you want before clicking on Download Name Badges button.
 
 ## Allow Registrants To Download Name Badge
 
 If you want to allow registrants to download Name Badges themself, you can insert the tag [DOWNLOAD_NAME_BADGE_LINK] into the email message you want (for example, registration completed email or checked in success email....). Registrants can then click on the link to download the badge themself
 
-If you use checked in registrants using QRCODE feature, you can also insert that tag into checked in success message and download the Name Badge, print it and send to your registrant after they are successfully checked in.
+If you use checked in registrants using a QR code feature, you can also insert that tag into checked in success message and download the Name Badge, print it and send to your registrant after they are successfully checked in.

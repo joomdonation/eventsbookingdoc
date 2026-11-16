@@ -13,4 +13,4 @@ If you get the following error messages while trying to update to latest version
 
 - Check and make sure you already configured Download ID as described at [https://membershipprodoc.joomservices.com/getting-started/installation#use-joomla-update](https://membershipprodoc.joomservices.com/getting-started/installation#use-joomla-update)
 
-- If you already configured Download ID, maybe that Download ID was used on a different website already (could be on dev version of your site). In this case, login to your account on our website, access to https://joomdonation.com/download-ids.html , generate a new Download ID and use that new generated Download ID for your website
+- If you already configured Download ID, maybe that Download ID was used on a different website already (could be on dev version of your site). In this case, log in to your account on our website, access to https://joomdonation.com/download-ids.html , generate a new Download ID and use that new generated Download ID for your website

@@ -7,11 +7,11 @@ published: true
 media_order: 'field-assignment-options.png,field-assignment-only-categories.png,field-assignment-only-events.png,field-assignment-both.png'
 ---
 
-Before start adding custom fields for your events, please go to Events Booking -> Configuration, look at **Custom Fields Assignment** and choose how you want to assign custom fields to your events. It has following options:
+Before adding custom fields, go to Events Booking -> Configuration and use **Custom Fields Assignment** to choose how to assign fields to events.
 
 ![Field Assignmenet Options](field-assignment-options.png "field-assignment-options")
 
-- **Only Categories**: If you select this option, when you create a custom field, you can choose to assign custom field to **All** or certain selected categories. When you assign custom field to certain category, it will be available on registration form for all events belong to that category. **Choose this option if with your setup, all events from a category will have same set of custom fields**.
+- **Only Categories**: Assign a field to **All** categories or to selected categories. It appears on registration forms for events in those categories. Choose this option when all events in a category use the same set of fields.
 
 ![Field Assignment Only Categories](field-assignment-only-categories.png "field-assignment-only-categories")
 
@@ -19,8 +19,8 @@ Before start adding custom fields for your events, please go to Events Booking -
 
 ![Field Assignment Only Events](field-assignment-only-events.png "field-assignment-only-events")
 
-- **Both**: Choose this option if you want to be able to assign custom field to both categories and events you want. While it give you the flexibility of the combination, it's also hard to handle. **Recommend for advanced users and complicated usages only**.
+- **Both**: Assign fields to categories and events. This gives you more control and takes more care to configure. It’s best suited to advanced users with more complex setups.
 
 ![Field Assignment Both](field-assignment-both.png "field-assignment-both")
 
-In three options above, **Only Categories** is the simplest, **Only Events** is normal and **Both** is the most complicated.  If you choose to use option **Both**, consider reading documentation for common use-cases here [Common Fields Assignment Use-cases](/basic-setup/custom-fields/custom-fields-assignment)
+**Only Categories** is the simplest option, followed by **Only Events**. If you choose **Both**, see [Common Fields Assignment Use-cases](/basic-setup/custom-fields/custom-fields-assignment) for examples.

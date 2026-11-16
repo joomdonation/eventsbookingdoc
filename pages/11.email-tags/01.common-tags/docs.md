@@ -3,7 +3,7 @@ title: 'Common Tags'
 published: true
 ---
 
-The list of tags below could be used on all kind of emails
+You can use the tags below in any email type.
 
 ## Event Information Tags
 - [EVENT_ID]
@@ -42,7 +42,7 @@ The list of tags below could be used on all kind of emails
 - [EVENT_CREATOR_ID]
 
 ## Event Custom Fields Information
-If you use event custom fields to add more information about the event, you can include value of these custom fields in emails & messages using the syntax [NAME_OF_FIELD_IN_UPPERCASE]
+To insert the value of an event custom field into an email or message, use the syntax [NAME_OF_FIELD_IN_UPPERCASE].
 
 For example, if we have a field with name **field_speaker**, you can include value of that field using tag **[FIELD_SPEAKER]**
 

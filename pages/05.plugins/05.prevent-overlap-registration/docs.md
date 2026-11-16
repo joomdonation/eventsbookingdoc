@@ -4,7 +4,7 @@ visible: true
 published: true
 ---
 
-This plugin is used to prevent users from registering for event which overlap time with the events which he registered before. If he is logged in, the system will check base on Joomla User ID of his account, otherwise, the check will be based on the email he entered on registration form. To use this feature, Go to **System** -> **Plugins**, find the plugin **Events Booking - Prevent Overlap Registration**, enable it.
+This plugin prevents users from registering for an event that overlaps with one they have already registered for. It identifies logged-in users by their Joomla user ID and other users by the email address entered on the registration form. To use it, go to **System** -> **Plugins** and enable **Events Booking - Prevent Overlap Registration**.
 
 - If the event does not have event end date, it will be considered as overlap with other events if the event date of that event is between start date and end date of one of the events which the user registered before.
 - If the event has event end date, it will be considered as overlap with other events in one of the 3 cases before:

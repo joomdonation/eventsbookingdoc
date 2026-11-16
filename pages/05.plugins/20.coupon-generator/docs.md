@@ -3,12 +3,12 @@ title: 'Coupon Generator'
 media_order: coupon-generator.png
 ---
 
-This plugin allows you to generate coupon code and send to registrants when they register for certain events in your site. Registrants, can then use that coupon code to get discount while registering for other events on your site.
+Generate and email a coupon code when users register for selected events. Registrants can use the code for a discount when they register for other events on your site.
 
 ## Enable and Configure the plugin
 
 1. Go to **System** -> **Plugins**, find and enable the plugin **Events Booking - Auto Coupon Generation**
-2. Now, when you add/edit an event, you will see a new tab **Coupons Generator** to allow you to setup the coupon code which will be sent to registrants of this event
+2. When you add or edit an event, open **Coupons Generator** to configure the coupon code that registrants will receive.
 
 ![Coupon generator](coupon-generator.png)
 

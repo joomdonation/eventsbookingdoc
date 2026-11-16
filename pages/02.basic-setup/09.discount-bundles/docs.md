@@ -6,15 +6,15 @@ taxonomy:
         - docs
 ---
 
-**Discount Bundle** allows you to give users discount when they register for all events which you select for the discount bundle. 
+Use **Discount Bundle** to offer a discount when a user registers for all the events in a bundle.
 
 To access to **Discount Bundles Management** page, there are 3 ways:
 
-1. Access to **Components -> Events Booking -> Discount Bundles**.
+1. Go to **Components -> Events Booking -> Discount Bundles**.
 2. On any pages in Events Booking, access to **Setup -> Discount Bundles**.
 
 ## Add New Discount Bundle
-From Discount Bundles Management screen, press New button in the toolbar to add a new location. You will be presented with a screen below:
+From Discount Bundles Management screen, click New in the toolbar to add a new location. You will be presented with a screen below:
 
 ![new-discount-bundle](new-discount-bundle.png "new-discount-bundle")
 
@@ -29,32 +29,32 @@ From Discount Bundles Management screen, press New button in the toolbar to add 
 </tr>
 <tr>
 <td><strong>Discount</strong></td>
-<td>Enter discount amount you want here. When someone register for all events in this bundle, they will receive that discount amount.</td>
+<td>Enter the discount registrants receive when they register for all the events in the bundle.</td>
 </tr>
 <tr>
 <td><strong>Event</strong></td>
-<td>Select the events you want for this bundle. Users will have to register for all events you select here to receive the discount amount configure for this discount bundle.</td>
+<td>Select the events to include in the bundle. Registrants must register for all of them to receive the discount.</td>
 </tr>
 <tr>
 <td><strong>Times</strong></td>
-<td>How many times this discount bundle can be used. Leave it empty mean it is unlimited</td>
+<td>Enter the number of times the discount bundle can be used. Leave it blank for unlimited use.</td>
 </tr>
 <tr>
 <tr>
 <td><strong>From Date</strong></td>
-<td>If you choose a date here, this discount bundle will only be valid from that date.</td>
+<td>Set the date when the discount bundle becomes available.</td>
 </tr>
  <tr>
 <td><strong>To date</strong></td>
-<td>If you choose a date here, this discount bundle will only be valid until this date.</td>
+<td>Set the date when the discount bundle expires.</td>
 </tr>   
 </tbody>
 </table>
 
 ## Some notes
-Users will only receive discount if they register for all events which you setup for the discount bundle. So:
-1. If you use Individual/Group registration on your site, users will need to login during the registration to receive discount. He will only receive discount on final registration (which mean registering for the last event configured in the bundle)
-2. If you activate shopping cart on your site, users can receive discount without logging in, too. However, in case they are not logged in, the system could not get the list of events which he registered before, so he will have to register for all events in the bundle within one registration/checkout. If he login, the system will get the events which he registered before + the events he added to the current cart to see whether he is allowed to get discount in the discount bundle
+Users will only receive discount if they register for all events that you set up for the discount bundle. So:
+1. With Individual/Group registration, users must log in to receive the discount. They receive it when they register for the final event in the bundle.
+2. With the shopping cart enabled, users can receive the discount without logging in if they register for all events in the bundle in one checkout. For logged-in users, Events Booking checks both previous registrations and events in the cart to determine eligibility.
 3. In case multiple discount bundles meet for one registration, he will receive discount amount of all the matching discount bundles
 
 ## Discount By Number Of Items In Cart

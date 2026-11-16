@@ -3,4 +3,4 @@ title: States
 visible: true
 ---
 
-Display list of states to allow users to click on to view events from a state
+This module lists states. Visitors can select a state to see its events.

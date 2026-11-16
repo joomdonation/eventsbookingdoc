@@ -9,4 +9,15 @@ taxonomy:
 
 # Frontend Items
 
-Explode the menu options supported by Events Booking and how to setup it to display events, allow users to browse, register for these events, manage their registation history... from frontend of your site
+Use Events Booking menu items to display events and registration pages on your site. Visitors can browse events, register, and view their registration history.
+
+- [Categories](/frontend-items/categories) — List several event categories.
+- [Full Calendar](/frontend-items/full-calendar) — Display events using FullCalendar.
+- [Calendar](/frontend-items/calendar) — Display events using the Calendar menu item.
+- [Upcoming Events](/frontend-items/upcoming-events)
+- [Category](/frontend-items/category) — List events from a specific category.
+- [Event Details](/frontend-items/event-details) — Display the details of a single event.
+- [Registration Form](/frontend-items/registration-form) — Link directly to an event’s registration form.
+- [Registration History](/frontend-items/registration-history)
+- [Display Registrants List](/frontend-items/display-registrants-list)
+- [Display Waiting List](/frontend-items/display-waiting-list)

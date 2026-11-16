@@ -2,7 +2,7 @@
 title: 'Google Map Error & Solution'
 ---
 
-Recently, Google Map API changed their policy: Now each site must registers and use an own Google Map API Key. So if you still use default Google Map API Key shipped with Events Booking by default, you will receive some kind of errors when the map is being displayed. To solve it:
+Recently, Google Map API changed their policy: Now each site must registers and use an own Google Map API Key. So if you still use default Google Map API Key shipped with Events Booking by default, you will receive some kind of errors when the map is displayed. To solve it:
 
 1. Follow the instuctions at [https://developers.google.com/maps/documentation/javascript/get-api-key](https://developers.google.com/maps/documentation/javascript/get-api-key) , register for a new Google Map API Key for your site. Then go to Events Booking -> Configuration, enter that new API Key into Google Map API Key config option, save it. Allows Google requires you to provide billing address, they give you free 200$ credit to use per month, mean free:
 

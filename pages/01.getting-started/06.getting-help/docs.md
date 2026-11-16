@@ -2,25 +2,25 @@
 title: 'Getting Help'
 ---
 
-When you setup and use **Events Booking** extension, if you have any questions or need supports from us, please use one of the following support chanels to get support from us:
+Use any of these channels to get help setting up or using **Events Booking**.
 
-1. Search [Events Booking forum](https://joomdonation.com/forum/events-booking-general-discussion.html) for the answer to your question. It is very likely that someone uses **Events Booking** before you had the same qusestion, posted their question on forum and got it answered already. In case you could not find any forum topic has the answer you need, please open a new topic.
-2. Login to our website and submit a new ticket to **Events Booking** category: [https://joomdonation.com/support-tickets.html](https://joomdonation.com/support-tickets.html)
+1. Search the [Events Booking forum](https://joomdonation.com/forum/events-booking-general-discussion.html) to see if another user has already asked your question. If you can’t find an answer, open a new topic.
+2. Log in to our website and submit a new ticket to **Events Booking** category: [https://joomdonation.com/support-tickets.html](https://joomdonation.com/support-tickets.html)
 3. Drop us an email to services@joomdonation.com
 4. Use Contact Form at our website: [https://joomdonation.com/contact-us.html](https://joomdonation.com/contact-us.html)
 5. Contact me directly via Skype for urgent support. My Skype nickname is **os.tuanpn**
 
-We will try to get back to you within 24 hours (or earlier) in weekday and in 48 hours during weekend.
+We aim to respond within 24 hours on weekdays and 48 hours on weekends.
 
 >>>>> If you send us an email (to services@joomdonatiom.com or via contact form) but didn't receive our response, it is very likey that we missed your email for some reasons. In that case, please do help by re-sending the email. We never ignore any customers, so it is un-usual that we don't reply your email / support request.
 
 ___
 
->>>>> When you receive response from us via support ticket asking for more information, please do reply via support ticket. Please don't reply via email. We should keep communication in one place only. If you reply via email, we might miss your email (we receive so many emails per day) and might forgot to reply you.
+>>>>> If we ask for more information in a support ticket, reply in that ticket so we can follow the conversation. We may miss a separate email.
 
 ___
 
->>>>> If your support request is related to how the extension work, please post it on forum. We will answer you directly on forum so that other customers can see the answer.
+>>>>> For questions about how the extension works, post in the forum. We’ll reply there so other customers can see the answer.
 
 ___
 

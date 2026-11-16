@@ -6,37 +6,37 @@ taxonomy:
 media_order: 'coupon-csv.png,coupons-management.png,add-new-coupon.png,batch-coupons-generation.png'
 ---
 
-**Events Booking** allows you to create coupon codes to give discount to your registrants when they register for events on your site.
+Use **Events Booking** to create coupon codes that give registrants a discount on event registrations.
 
-To access to coupons management page, there are 3 different ways:
-1. Access to **Components -> Events Booking -> Coupons**
-2. Access to Events Booking **Dashboard**, then click on **Coupons** icon.
+To access to coupons management page, use one of these three options.
+1. Go to **Components -> Events Booking -> Coupons**
+2. Open Events Booking **Dashboard**, then click the **Coupons** icon.
 3. On any pages in Events Booking, access to **Coupons** menu item
 
 ![coupons-management](coupons-management.png "coupons-management")
 
 ## Add New Coupon
-Press **New** button to create new coupon
+Click **New** to create new coupon
 
 1. **Code**: The code for this new coupon.
 2. **Discount**: Enter the discount for this coupon. Discount can be set to a fixed amount (for example 10$) ro by percent (for example 10% of subscription fee).
-3. **Categories**: Choose the categories which coupon can be used. Choose **All Categories** if you want the coupon can be used for events from all categories (all events from the system).
-4. **Events Assignment**: Determine how the coupon will be assigned to selected events:
-- **All Events** : The coupon can be used for all events in the system. You cannot choose this option if you want limit the coupon usage to certain categories only (selected in **Categories**  setting above)
+3. **Categories**: Choose which event categories allow this coupon. Select **All Categories** to allow the coupon for events in any category.
+4. **Events Assignment**: Choose how to assign the coupon to events.
+- **All Events**: Allow the coupon for every event. Use a different option if **Categories** restricts the coupon to specific categories.
 - **Selected Events**: The coupon can be used for all selected all selected events and the events which match the categories assignment in Categories parameter above
 - **Exclude Selected Events**: The coupon can be used for all events which match the categories assignment in Categories parameter above except the selected events.
-5. **Events**: Choose the events which will be used for Coupon Assignment parameter above.
-6. **Times**: Enter number of times this coupon code can be used. If you leave it empty, the coupon code can be used unlimited times.
-7. **Valid From Date**: If you choose a date, the coupon code can only be used **from the selected date**.
-8. **Valid To Date**: If you chose a date, the coupon code can only be used before the selected date. After that date, the coupon code cannot be used anymore.
-9. **Apply To**: Control how the discount will be calculated for the registration: **Each Member** or **Each Registration**.
+5. **Events**: Choose the events to use with the Coupon Assignment setting above.
+6. **Times**: Enter the maximum number of times the coupon can be used. Leave this blank to allow unlimited use.
+7. **Valid From Date**: Choose the first date the coupon can be used. It becomes available **from the selected date**.
+8. **Valid To Date**: Choose the date when the coupon expires.
+9. **Apply To**: Choose whether to apply the discount to **Each Member** or **Each Registration**.
 10. **Enable Coupon On** : Control what type of registration the coupon can be used for: **Individual Registration**, **Group Registration** or **Both**.
-11. **Min Number Registrants** : If you enter a number here, the coupon can only be used for group registration with number registrants greater than or equal the entered number.
-12. **Max Number Registrants** : If you enter a number here, the coupon can only be used for group registration with number registrants smaller than or equal the entered number.
-13. **User** : If you select a user here, the coupon can only be used for the selected user. So unless you want to make the coupon for specific user, please don't no select any user here.
+11. **Min Number Registrants**: Enter the minimum group size required to use the coupon.
+12. **Max Number Registrants**: Enter the maximum group size allowed to use the coupon.
+13. **User**: Select a user to restrict the coupon to that user, or leave this blank to make it available to other users.
 14. **Access** : Only users with this access level can used the coupon. Usually, this should be set to Public
 15. **Note**: Put a note (for yourself) about this coupon
-16. **Published** : Set to Yes if you want to allow users to use the coupon code, set to No to disable it.
+16. **Published**: Set to Yes to enable the coupon or No to disable it.
 
 ![add-new-coupon](add-new-coupon.png "add-new-coupon")
 
@@ -64,22 +64,22 @@ Press **New** button to create new coupon
 **5. Coupons available for events**
 - **Categories**: Do not select anything.
 - **Events Assignment** : Set to **Selected Events**
-- **Events** : Select the events which you want the coupon to be available.
+- **Events**: Select the events that accept the coupon.
 
 ## Export Coupons
 
-**Events Booking** allows you to export coupons into a csv file so that you can import these coupons into another system if needed. Or you might just want to use the csv file for reporting purpose
+Export coupons to CSV for reporting or to import them into another system.
 
-To export coupons, from any pages in **Events Booking**, access to **Coupons -> Export** sub-menu. A csv file will be generated and downloaded to your computer. Below is the screenshow of a sample csv file exported by Membership Pro
+To export coupons, from any pages in **Events Booking**, access to **Coupons -> Export** sub-menu. A CSV file will be generated and downloaded to your computer. Below is the screenshow of a sample CSV file exported by Membership Pro
 ![Coupons CSV file](coupon-csv.png)
 
 ## Import Coupons
 
-**Events Booking** allows you to import existing coupon codes from a csv file into the system. This is helpful in case you have coupons generated by other system and want to import it into the extension.
+Import coupon codes from a CSV file, for example when migrating codes from another system.
 
 ### Prepare the csv file
-To be imported into Events Booking, the csv file contains coupon code need to be formatted in a required format. The easiest way is you the **Export Coupons** feature above to get a sample of the CSV file. Below are the meaning of the columns in csv file:
-1. **event**: This column contains id(s) of the events. If it is empty, the coupon code will be assigned to all events.
+To be imported into Events Booking, the CSV file contains coupon code need to be formatted in a required format. The easiest way is you the **Export Coupons** feature above to get a sample of the CSV file. Below are the meaning of the columns in CSV file:
+1. **event**: Enter the event IDs. If this column is empty, the coupon applies to all events.
 2. **code**: The coupon code
 3. **coupon_type**: 0 mean discount type is percent. 1 mean discount type is fixed amount.
 4. **discount**: The discount amount
@@ -90,12 +90,12 @@ To be imported into Events Booking, the csv file contains coupon code need to be
 
 ### Run the import
 
-When you have the csv file contains the coupon codes ready, please follow the steps below to get the coupon code imported into the system:
-1. Access to **Coupons -> Import**sub-menu item.
-2. Click on **Choose File** button to select the csv file.
+After preparing the CSV file, follow these steps to import the coupon codes.
+1. Go to **Coupons -> Import**sub-menu item.
+2. Click **Choose File** to select the CSV file.
 3. Press **Import Coupons** button in the toolbar to process the import.
 
-After that, the coupon codes in the csv file will be imported and can be used in the system
+The imported coupon codes are now available in Events Booking.
 
 ## Batch Coupons
 
@@ -106,19 +106,19 @@ From any page in Membership Pro, you can access to **Coupons -> Batch Coupons** 
 ![batch-coupons-generation](batch-coupons-generation.png "batch-coupons-generation")
 
 1. **Number Coupons**: Enter number of coupons you want the system to create. For example, 100, 500....
-2. **Event**: Choose the event(s) which this coupon code can be used. Choose **All Events** if you want this coupon code can be used for any events.
+2. **Event**: Select the events that accept these coupon codes, or select **All Events**.
 3. **Discount**: Enter the discount for the coupons. Discount can be set to a fixed amount (for example 10$) ro by percent (for example 10% of subscription fee).
-4. **Characters set**: The characters set will be used to create these coupons. When generating coupon code, the system will get random character from this characters set. You can leave this empty and the system will use this characters set **ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789**
-5. **Prefix**: If you want these coupons code has a fixed prefix, enter the prefix you want here, otherwise, leave it empty
-6. **Coupon Length**: The length of the generated coupon codes. Enter an integer number, for example, if you want the coupon code to have 10 characters, enter 10 into this field
-7. **Valid From Date**: If you choose a date, the coupon codes can only be used **from the selected date**.
-8. **Valid To Date**: If you chose a date, the coupon code can only be used before the selected date. After that date, the coupon code cannot be used anymore.
-9. **Times**: Enter number of times these coupon codes can be used. If you leave it empty, the coupon code can be used unlimited times.
+4. **Characters set**: Enter the characters to use when generating the codes. Leave this blank to use **ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789**.
+5. **Prefix**: Enter a fixed prefix for the coupon codes, or leave this blank.
+6. **Coupon Length**: Enter the number of characters in each coupon code. For example, enter 10 to generate 10-character codes.
+7. **Valid From Date**: The coupon codes become available **from the selected date**.
+8. **Valid To Date**: Choose the date when the coupon codes expire.
+9. **Times**: Enter how many times the coupon codes can be used. Leave this blank to allow unlimited use.
 
-After enter all the necessary settings, press **Generate Coupons** button in the toolbar and the coupon codes will be generated, ready to use in your system
+After completing the settings, click **Generate Coupons** in the toolbar to create the codes.
 
 ## Voucher Explanation
-When you create coupon code, there is a Discount option called **Voucher**. With a voucher 100$ for example, you will have 100$ in the account and can be used to register for events until the remaining voucher amount back to 0:
+To let registrants use a coupon across multiple registrations, select **Voucher** as the Discount option. For example, a $100 voucher can be used until its balance reaches $0.
 
 - You register for an event costs 20$, you will have 80$ left.
 

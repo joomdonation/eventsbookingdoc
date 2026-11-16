@@ -4,6 +4,6 @@ media_order: os-eway.png
 visible: true
 ---
 
-If you use Eway payment plugin, you just need to get Customer ID from your Eway account, enter it into os_eway payment plugin parametter and start using this payment plugin.
+Get the Customer ID from your Eway account and enter it in the os_eway payment plugin settings.
 
 ![Eway Payment Plugin](os-eway.png)

@@ -4,14 +4,14 @@ media_order: mod_eb_search.png
 visible: true
 ---
 
-This module allows users to search for events base on categories, locations, keywords....To use this module, please create an instance of **Events Booking - Search Events** module and publish it on a module position on your site template. 
+Visitors can use this module to find events by category, location, or keyword. To use it, create an instance of **Events Booking - Search Events** and publish it in a module position in your site template.
 
 ![Events Booking - Search Modules](mod_eb_search.png)
   
-The up-coming events module has following parameters:
-1. **Category ID**: If you enter a category ID here, the system will only search for event from this category only.
-2. **Show Category**: Choose to show/hide category dropdown to allow searching events from selected category
-3. **Show Location**: Choose to show/hide location dropdown to allow searching events from selected location
-4. **Search Result Layout**: Choose the layout you want to use to display search result (Default, Timeline, Table, Columns)
-5. **Module Layout**: Choose the layout to render module (**default**, **horizontal**)
-6. **Itemid**: Enter ID of the default menu item will be used generate SEF link to the events in search result in case there is no menu item could be detected for the event. Something related to SEF router, leave it empty and the module will use default menu item.
+The module has the following parameters.
+1. **Category ID**: Enter a category ID to limit searches to events in that category.
+2. **Show Category**: Show or hide the category filter.
+3. **Show Location**: Show or hide the location filter.
+4. **Search Result Layout**: Choose Default, Timeline, Table, or Columns for the results.
+5. **Module Layout**: Choose **default** or **horizontal**.
+6. **Itemid**: Enter the ID of the menu item to use for SEF links to events in search results when Events Booking cannot find a matching menu item. Leave it blank to use the default menu item.

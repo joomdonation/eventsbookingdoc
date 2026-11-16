@@ -7,28 +7,28 @@ media_order: invoice-settings.png
 ---
 
 ## Introduction
-**Events Booking** supports **PDF invoice feature**. If you enable this feature, when registrants register for a paid event on your site, there will be an **invoice PDF generated**:
+Enable the **PDF invoice feature** to generate a PDF invoice when someone registers for a paid event. You can make the **invoice PDF generated** available in the following ways.
 1. The layout of the invoice PDF is configurable
 2. The invoice PDF will be generated for each registration
 2. The invoice PDF can be configured to send registrant's email
 3. A copy of the invoice can be configured to send to admin's email
 4. Admin can download invoices for the registrants by accessing to **Events Bookong => Registrants** section.
 5. If admin wants to download all invoices, he can downdown it via FTP. All generated invoices are stored in **media/com_eventbooking/invoices** folder of the site
-6. Registrants can also download the invoices from frontend of the site by logging in and access to Events Booking - Registration History Page
+6. Registrants can also log in to the frontend and download invoices from the Events Booking - Registration History page.
 7. Each event can have it own invoice format if needed. In case you need it, edit the event, look at **Advanced Settings** tab and change Invoice Layout from there, it will override the general invoice layout which you configured in Configuration.
 
 ## Configure invoice
-To use this feature, please go to **Events Booking -> Configuration**, look at **Invoice Settings** tab, find the config option **Activate Invoice Feature**, set it to **Yes** and change the **Invoice Layout** to meet your own need if needed (at least you should change the invoice logo)
+To use this feature, please go to **Events Booking -> Configuration**, look at **Invoice Settings** tab, find the config option **Activate Invoice Feature**, set it to **Yes** and change the **Invoice Layout** to suit your needs if needed (at least you should change the invoice logo)
 
-Below are the config options which you can change in **Invoice Settings** tab and it's meaning:
+Use the following settings in **Invoice Settings** to control how Events Booking generates and sends invoices.
 
-1. **Activate Invoice Feature**: If you have **paid events** and want to send invoice PDF to your registrants after they sign up and complete payment for the registration, please set this config option to **Yes**.
-2. **Send invoice to registrants**: Set this config option to **Yes** if you want the system to send PDF invoice to registrants in the confirmation email they received after registering for your event. If you set to **No**, registrants will have to access to their registration history page (you need to setup a menu item to link to registration history page of Events Booking) to download the invoice. This config option **should be set to Yes** if you use invoice feature.
-3. **Send copy of invoice to administrators**: If you want to receive a copy of the PDF invoice send to admin(for managing purpose), you can set this config option to Yes.
-4. **Invoice Start Number**: If you want the invoice number in the system to start with a certain number (instead of starting by 1), you can enter that number into this config option.
+1. **Activate Invoice Feature**: Set to **Yes** to generate PDF invoices for **paid events** after registrants complete payment.
+2. **Send invoice to registrants**: Set to **Yes** to attach the PDF invoice to the confirmation email. If you set it to **No**, create a menu item for the Events Booking registration history page so registrants can download invoices there. This setting **should be set to Yes** when you use invoices.
+3. **Send copy of invoice to administrators**: Set to Yes to send administrators a copy of the PDF invoice.
+4. **Invoice Start Number**: Enter the number to use for the first invoice. The default is 1.
 5. **Invoice prefix**: Enter the prefix for invoice number. For example, you can enter **IV** and the invoice number in your system will have this format **IV**0001, **IV**0002, **IV**0003....
-6. **Invoice Number Length**: Enter the length of invoice number. For example, if you set it to 4, invoice number will have the following format IV0001, IV0002..
-7. **Invoice Format**: Events Booking generates default basic invoice format when you first install the extension. You should review and change the invoice format to meet your need (at least you will have to change invoice logo)
+6. **Invoice Number Length**: Enter the length of the invoice number. For example, with a length of 4, invoice numbers look like IV0001 and IV0002.
+7. **Invoice Format**: Events Booking creates a basic invoice layout during installation. Review the layout and replace the invoice logo.
 
 ![invoice-settings](invoice-settings.png "invoice-settings")
 
@@ -38,7 +38,7 @@ Below are list of all the tags which you can use to design your invoice
 ### Event Information tags
 - [EVENT_TITLE]
 - [EVENT_DATE]
-- [EVENT_DATE_DATE] (show date of event without time)
+- [EVENT_DATE_DATE] (event date without the time)
 - [EVENT_DATE_TIME]
 - [EVENT_END_DATE]
 - [EVENT_END_DATE_DATE]
@@ -52,11 +52,11 @@ Below are list of all the tags which you can use to design your invoice
 - [LOCATION_NAME]
 
 ### Registration information
-- [ID] (ID of the registration record)
+- [ID] (registration record ID)
 - [FIRST_NAME]
 - [LAST_NAME]
-- [NAME] (combination of first_name + last_name)
-- Any custom fields using the syntax [NAME_OF_FIELD_IN_UPPERCASE], for example, if you have a custom field name registration_type, then the tag is [REGISTRATION_TYPE]
+- [NAME] (first_name and last_name combined)
+- To insert a custom field, use [NAME_OF_FIELD_IN_UPPERCASE]. For example, use [REGISTRATION_TYPE] for a field named registration_type.
 - [COUPONCODE]
 - [USERNAME]
 - [USER_ID]
@@ -74,7 +74,7 @@ Below are list of all the tags which you can use to design your invoice
 - [PAYMENT_DATE]
 - [TRANSACTION_ID]
 - [REGISTRATION_STATUS]
-- [TICKET_TYPES] (if you are using Ticket Types feature)
+- [TICKET_TYPES] (if you use the Ticket Types feature)
 
 ### Invoice information 
 - [INVOICE_NUMBER]

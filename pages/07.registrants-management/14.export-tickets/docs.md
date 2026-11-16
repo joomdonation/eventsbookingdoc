@@ -4,8 +4,8 @@ published: true
 media_order: registrants-export-tickets.png
 ---
 
-If you activate **Tickets PDF** feature to generate PDF tickets and send to registrants of your event, you might want to export PDF tickets for all or filtered registrants. To do that, from registrants management screen, filter registrants (base on event, status or event select the registration records you want) and press **Actions -> Export Tickets** button in the toolbar.
+If you use **Tickets PDF**, you can export tickets for all registrants or a filtered set. On the registrants management screen, filter by event or status, or select individual records. Then click **Actions -> Export Tickets** in the toolbar.
 
-When you do that, tickets PDF of all filtered registrants will be exported into a single PDF file (each ticket in one page).
+Events Booking combines the tickets into a single PDF, with one ticket per page.
 
 ![registrants-export-tickets](registrants-export-tickets.png "registrants-export-tickets")

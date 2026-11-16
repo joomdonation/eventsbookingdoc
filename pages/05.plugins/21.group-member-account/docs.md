@@ -3,11 +3,11 @@ title: 'Group Member Account'
 published: true
 ---
 
-When you perform a group registration, if **User Registration Integration** is enabled on your Events Booking installation, Events Booking will only allow creating user account for the billing person, not for group members. If you want to create separate user account for each group member, you can enable and use **Events Booking - Group Member Account** plugin.
+If **User Registration Integration** is enabled, a group registration creates an account for the person completing the billing information. Enable **Events Booking - Group Member Account** to create a separate user account for each group member.
 
 ### Requirement
 
-This plugin only work for Group Registration. So if you collect members information in shopping cart or ticket types, there will be no user account created.
+This plugin creates accounts only for Group Registration. Member information collected through the shopping cart or ticket types does not create user accounts.
 
 ### Configuration
 In Joomla, to create user account, we need to have following information :
@@ -18,7 +18,7 @@ In Joomla, to create user account, we need to have following information :
 
 2. **Name**
 
-You should have at least first_name field (or both first_name and last_name fields) collected for each group members. That data will be used to populate name of the user account.
+You should have at least first_name field (or both first_name and last_name fields) collected for each group member. That data will be used to populate name of the user account.
 
 3. **Email**
 

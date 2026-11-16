@@ -3,9 +3,9 @@ title: 'Remaining Payment Reminder Email'
 visible: true
 ---
 
-This is the email sent to registrants who use deposit payment for their registration to remind them to complete the remaining payment for their registration
+This email reminds registrants who paid a deposit to pay their remaining balance.
 
-Go to Events Booking -> Emails & Messages, look at **Remaining Payment Messages** tab, find the two items below and change it to meet your need: **Deposit Payment Reminder Email Subject**, **Deposit Payment Reminder Email Body**
+To edit the reminder, go to Events Booking -> Emails & Messages and open **Remaining Payment Messages**. Edit **Deposit Payment Reminder Email Subject** and **Deposit Payment Reminder Email Body**.
 
 ## Supported Tags
 

@@ -5,13 +5,13 @@ taxonomy:
         - docs
 ---
 
-**Events Booking** allows you to develop plugins to extend it's features. In fact, it has many plugins come with it by default which you can see in the foldder **plugins/eventbooking** on your site.
+You can write plugins to extend **Events Booking**. The bundled plugins are in **plugins/eventbooking** on your site.
 
-**Events Booking** supports the following events trigger which you can write plugin to handle to add more features to the extension:
+**Events Booking** triggers the following events. Your plugin can listen for them to add behavior to the extension.
 
 ## onEditEvent
 
-This event is triggered on add/edit event form. It usually used to allows you to display a form to allow admin control the necessary settings for your event. A sample is the Joomla Groups plugin which allows admin to select which user groups registrants of the event will be added to when he registers and make payment for the event.
+This event is triggered on add/edit event form. It usually used to allows you to display a form to allow admin control the necessary settings for your event. A sample is the Joomla Groups plugin which allows admin to select which user groups registrants of the event will be added to when he registers and pay for the event.
 
 ```php
 public function onEditEvent($row)
@@ -126,7 +126,7 @@ public function onAfterSaveField($row, $data, $isNew)
 
 ## Use to Events Booking Code From Outside
 
-Sometime, you might want to use Events Booking code from outside the component, for example, from module or plugin. For that, the first thing you need to do is add this line of code to make sure all classes in Events Booking is autoload-able:
+Sometimes, you might want to use Events Booking code from outside the component, for example, from module or plugin. For that, the first thing you need to do is add this line of code to make sure all classes in Events Booking is autoload-able:
 
 ```php
 // Require library + register autoloader

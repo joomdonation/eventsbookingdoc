@@ -3,9 +3,9 @@ title: 'Export Registrants'
 media_order: 'export_while_viewing_events.png,frontend-export-registrants.png,export-registrants-inside-event.png'
 ---
 
-Events Booking allow you to export registrants to Excel file from frontend of your site if they have **Frontend Registrants Management** permission.
+Users with **Frontend Registrants Management** permission can export registrants to an Excel file from the frontend of your site.
 
-1. Users who has registrants management permission can access to [Registrants Management](/frontend-management/manage-registrants) page will be able to export registrants from all events or from the selected event he wants, same way with [exporting registrants from backend](/registrants-management/export-registrants)
+1. On the [Registrants Management](/frontend-management/manage-registrants) page, users with registrant management permission can export records for all events or select a single event, as when [exporting registrants from backend](/registrants-management/export-registrants).
 
 ![frontend-export-registrants](frontend-export-registrants.png "frontend-export-registrants")
 
@@ -13,4 +13,4 @@ Events Booking allow you to export registrants to Excel file from frontend of yo
 
 ![export-registrants-inside-event](export-registrants-inside-event.png "export-registrants-inside-event")
 
-3. You can create menu item to link to **Export Registrants** menu item type of Events Booking to allow users with [registrants management permission](/frontend-management/manage-registrants#permission-configuration) to click on to export registrants from all events in the system.
+3. Create an Events Booking menu item of type **Export Registrants** to let users with [registrants management permission](/frontend-management/manage-registrants#permission-configuration) export registrants for all events.

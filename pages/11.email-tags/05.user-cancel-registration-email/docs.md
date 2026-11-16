@@ -3,11 +3,11 @@ title: 'User Registration Cancel Email'
 published: true
 ---
 
-This is the email sent to administrator and registrants when a registrant cancel his registration.
+Events Booking emails the administrator and registrants when a registrant cancels their registration.
 
 ## Email Sent To Administrator
 
-Go to Events Booking -> Emails & Messages, look at **Cancel Registration Messages** tab, find and change the two messages below: **Registration Cancel Notification Email Subject**, **Registration Cancel Notification Email Body** to meet your need
+To edit the email, go to Events Booking -> Emails & Messages and open **Cancel Registration Messages**. Edit **Registration Cancel Notification Email Subject** and **Registration Cancel Notification Email Body**.
 
 - Supported Tags:
 
@@ -15,7 +15,7 @@ Any tags listed in [Common Tags](/email-tags/common-tags) documentation
 
 ## Email Sent To Registrant
 
-Go to Events Booking -> Emails & Messages, look at **Cancel Registration Messages** tab, find and change the two messages below: **Registration Cancel Confirmation Email Subject**, **Registration Cancel Confirmation Email Subject** to meet your need
+To edit the email, go to Events Booking -> Emails & Messages and open **Cancel Registration Messages**. Edit **Registration Cancel Notification Email Subject** and **Registration Cancel Notification Email Body**.
 
 - Supported Tags:
 

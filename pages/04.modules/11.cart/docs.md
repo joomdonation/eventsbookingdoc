@@ -3,4 +3,4 @@ title: Cart
 visible: true
 ---
 
-Display all events which current user has added to cart and contain link to go to checkout page
+This module lists the events in the current user’s cart and links to checkout.

@@ -5,7 +5,7 @@ published: true
 media_order: 'checked_in_registrants_user_groups.png,assign-checked-in-registrants.png'
 ---
 
-This plugin allows assigning registrants to the user groups you want after they are being successfully checked in. Base on the user groups assignment, you can give these checked in registrants access to restricted resources on your site if needed.
+Assign registrants to selected user groups after check-in. You can use those groups to grant access to restricted resources on your site.
 
 1. Go to **System** -> **Plugins**, find the plugin **Events Booking - Assign Checked In Registrants To User Groups**, click on it to edit.
 2. The plugin has a parameter called **Default User Groups**. If you select the user groups here, checked in registrants of all events will be assigned to these default user groups.

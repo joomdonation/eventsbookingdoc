@@ -7,7 +7,7 @@ published: true
 
 ## Installation
 
-When you purchase the payment plugin, you will receive a zip file called **os_eb_paypalepc.zip**. Go to **Events Booking** -> **Payment Plugins** to install it as any other payment plugin. See [**Install Payment Plugin**](/basic-setup/payment-plugins#install-new-payment-plugin) for installation instructions if needed.
+After purchasing the plugin, go to **Events Booking** -> **Payment Plugins** and install **os_eb_paypalepc.zip**. See [**Install Payment Plugin**](/basic-setup/payment-plugins#install-new-payment-plugin) for the steps.
 
 ## Configuration
 - Follow instructions at [https://developer.paypal.com/api/rest/#link-getclientidandclientsecret](https://developer.paypal.com/api/rest/#link-getclientidandclientsecret) , get **Client ID** and **Client Secret** of your PayPal account

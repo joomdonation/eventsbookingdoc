@@ -2,19 +2,19 @@
 title: 'EB View Module'
 ---
 
->>>This module is now deprecated and should be used for Events Booking older than 4.1.0 only. From Events Booking 4.1.0, please use [Easy View Module](/advanced-features/easy-view-module) which is much simpler to setup.
+>>>This module is now deprecated and should be used for Events Booking older than 4.1.0 only. From Events Booking 4.1.0, please use [Easy View Module](/advanced-features/easy-view-module) which is much simpler to set up.
 
 
-This is a special feature allow you to display a view in the extension (Calendar, Full Calendar, Upcoming events, Category, Event Detail, Registration Form of an event) inside a module on your site. (Normally, you will have to create a menu item to display a view in the extension)
+Use a module to display an Events Booking view on your site without creating a menu item. You can show the Calendar, Full Calendar, Upcoming events, Category, Event Detail, or an event’s Registration Form.
 
 1. Go to Extensions -> Modules, create a new instance of **Events Booking - View** module, assign it to the position you want in the template
-2. Click on the module to edit and setup the value you want for the below parameters:
+2. Click on the module to edit and set up the value you want for the below parameters:
 
 ### The View parameter
 You can choose the View you want to display in this parameter. It can be:
 1. **Calendar**: Display Monthly Calendar like [http://joomdonationdemo.com/eventbooking/calendar](http://joomdonationdemo.com/eventbooking/calendar) in the module
 2. **Full Calendar**: Display Full Calendar like [http://joomdonationdemo.com/eventbooking/full-calendar](http://joomdonationdemo.com/eventbooking/full-calendar) in the module
-3. **Categories**: Display list of categories like [http://joomdonationdemo.com/eventbooking/events-categories](http://joomdonationdemo.com/eventbooking/events-categories) in the module
+3. **Categories**: Display a list of categories like [http://joomdonationdemo.com/eventbooking/events-categories](http://joomdonationdemo.com/eventbooking/events-categories) in the module
 4. **Category**: Display events from a category like [http://joomdonationdemo.com/eventbooking/events-categories/joomla-events](http://joomdonationdemo.com/eventbooking/events-categories/joomla-events) in the module
 5. **Event Detail**: Display details information of an event like [http://joomdonationdemo.com/eventbooking/events-categories/joomla-events/jandbeyond](http://joomdonationdemo.com/eventbooking/events-categories/joomla-events/jandbeyond) in the module
 6. **Upcoming Events**: Display upcoming events (from one or all categories) like [http://joomdonationdemo.com/eventbooking](http://joomdonationdemo.com/eventbooking/) in the module
@@ -35,7 +35,7 @@ This paramer allow us to set query variables use for each view. It has this form
 In case full calendar menu option, the only variable you can set for query string is **Itemid**. You should create a hidden menu item to link to full calendar menu option so that you can control what will be displayed in the calendar in the menu parameters (for example, show week/month/day button, date format....) and then set Query string Itemid=ID_OF_THAT_MENU_ITEM
 
 3. **Categories**: Sample query string id=2&limit=20&Itemid=138. All variables are optional
-- id=2 mean the system will all children categories of category with ID = 2 in the module. If you leave it empty, top level categories (parent = 0) will be displayed
+- id=2 mean the system will all subcategories of category with ID = 2 in the module. If you leave it empty, top-level categories (parent = 0) will be displayed
 - limit=20 will display max 20 categories in the module
 - Itemid=138 means the system will use menu item with ID = 138 as default active menu item to generate link to each category (and also use settings of that menu item like show page heading, page heading...to display in the module, too). Usually, this could be ID of a hidden menu item to link to Categories menu option of Events Booking (or a default menu item - for example, if you only have a menu item to link to upcoming events menu option of Events Booking on your site, you can use ID of that menu item here, too)
 

@@ -4,10 +4,10 @@ published: true
 media_order: eventbooking-new-event-notification.png
 ---
 
-This plugin allows sending notification emails to users from certain user groups when events are created from frontend, backend or both.
+Notify members of selected user groups when someone creates an event. Choose whether to send notifications for events created on the frontend, in the administrator area, or in both places.
 
 ## Configure The Plugin
-To use this plugin, you need to go to **System -> Plugins**, find and publish **Events Booking - New Event Notification** plugin. It has following parameters, you can be changed it to meet your own need:
+Go to **System -> Plugins** and publish **Events Booking - New Event Notification**. Adjust the following settings as needed.
 
 - **User Groups**: Select the user groups which you want to send notification email to each time there is new event created.
 - **For Events Created From**: Determine whether the notification emails should be sent when events created from frontend, backend or both.

@@ -6,10 +6,10 @@ taxonomy:
 media_order: eventsbooking-custom-css.png
 ---
 
-Sometime, you might want to customize layout of some pages in **Events Booking** to meet your requirement. Some notes below should be helpful to you if you have to do that:
+Use the options below to customize page layouts in **Events Booking**.
 
 ## Customize CSS
-If you want to add any css code to the extension, don't modify the css file directly. Go to **Events Booking**->**Configuration**, look at Custom CSS tab, add any custom css code you want there
+To add custom CSS, go to **Events Booking**->**Configuration** and enter your CSS on the Custom CSS tab. This keeps your changes separate from the extension’s CSS files.
 
 ![eventsbooking-custom-css](eventsbooking-custom-css.png "eventsbooking-custom-css")
 
@@ -35,6 +35,6 @@ If you want to customize the layouts in the extension, please use **Template Ove
 
 Once the change is done, copy the modified files to PATH_TO_YOUR_SITE_TEMPLATE/html/com_eventbooking/emailtemplates folder.
 
-6. If you want to customize frontend event submission form, depends on the the layout you are using (configurable in Events Booking -> Configuration, Themes tab, **Frontend event submission form layout** config option:
+6. The override file for the frontend event submission form depends on the layout you choose in Events Booking -> Configuration, under **Frontend event submission form layout** on the Themes tab.
 * If you use Simple layout, take a copy of the file **components/com_eventbooking/themes/default/event/simple.php**, place it to **PATH_TO_YOUR_SITE_TEMPLATE/html/com_eventbooking/event** folder and do any customization from there
 * If you use Default layout, take a copy of one of the follow files form.php, form_discount_settings.php, form_fields.php, form_general.php, form_group_rates.php, form_misc.php, form_recurring_settings.php from **components/com_eventbooking/themes/default/event/** folder, place it inside **PATH_TO_YOUR_SITE_TEMPLATE/html/com_eventbooking/event** folder and do any customization from there

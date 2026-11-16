@@ -4,19 +4,19 @@ published: true
 media_order: task-eventsbooking-delete-old-pdf-tickets.png
 ---
 
-Each time Events Booking generates PDF ticket, a PDF file for that ticket will be generated and stored on server and costs hosting space. This scheduled task is used to delete ticket PDFs which are older than one day each time it is executed. To use this feature:
+Events Booking stores each generated ticket PDF on the server. This task deletes ticket PDFs that are more than one day old to free up storage space.
 
 ## Create and configure the scheduled task
 
-1. Go to **System -> Plugins**, make sure **Task - Events Booking** plugin is enabled.
-2. Go to **System -> Scheduled Tasks**, press New button in the toolbar to create a new scheduled task for **Events Booking - Delete PDF Tickets** task type.
-3. Setup all required parameters, save it.
+1. Go to **System -> Plugins** and make sure the **Task - Events Booking** plugin is enabled.
+2. Go to **System -> Scheduled Tasks**, click New in the toolbar to create a new scheduled task for **Events Booking - Delete PDF Tickets** task type.
+3. Set the required parameters and save the task.
 
 ![task-eventsbooking-delete-old-pdf-tickets](task-eventsbooking-delete-old-pdf-tickets.png "task-eventsbooking-delete-old-pdf-tickets")
 
 ## Task Basic Fields
-This scheduled task should not be run so often. Run it every few days should be enough. So you can setup **Basic Fields** to following values
+Running this task every few days should be enough. Use the following values under **Basic Fields**.
 
 - **Execution Rule**: Set to **Interval, Days**
-- **Interval in Days**: Set to the number you want, for example, if you set it to 7, the task will be run every 7 days.
-- **Execution Time (UTC)**: Choose the time in the day the task will be executed, for example 10:00 AM.
+- **Interval in Days**: Set how often to run the task. For example, enter 7 to run it every seven days.
+- **Execution Time (UTC)**: Choose the time of day to run the task, such as 10:00 AM.

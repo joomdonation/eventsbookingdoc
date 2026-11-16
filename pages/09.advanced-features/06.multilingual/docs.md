@@ -6,9 +6,9 @@ taxonomy:
         - docs
 ---
 
-**Events Booking** support multilingual out of the box, and I am proud to say that it is implemented in a better way than Joomla core. Basically, in Joomla core, for each item (for example, each article), you will have to setup different records, each record for one language
+**Events Booking** supports multilingual sites. In Joomla, you typically create one record per language for an item, such as an article.
 
-However, in **Events Booking** you will only have to create one record, then translate to different languages in Translation tab in add/edit record screen.
+In **Events Booking**, create one record. To translate it, open the Translation tab when adding or editing the record.
 
 To setup **Events Booking** on a multilingual website, you will need to do the translation on a different places below:
 
@@ -45,4 +45,4 @@ The final part you have to translate is **Emails & Messages**. Access to **Event
 
 ![translate-message-item](translate-message-item.png "translate-message-item")
 
->>>>>> Sometime, you might see an SQL error when your site is a multilingual website because the database tables lack some require fields to support multilingual. If that's the case, please access to **Tools => Fix Database Schema**. After that, the error should be gone.
+>>>>>> On a multilingual site, missing database fields can cause an SQL error. To add the required fields, go to **Tools => Fix Database Schema**.

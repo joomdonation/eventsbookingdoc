@@ -3,17 +3,17 @@ title: 'Registration status is Pending after making payment'
 visible: true
 ---
 
-Sometime, during testing peior, you see that after making payment at PayPal, the status of registration record is Pending instead of Active as expected. Don't worry, there could be many reasons causing this issue and we will figure it out:
+If a test registration stays Pending after payment through PayPal instead of changing to Active, check the settings below.
 
 1. First, please make sure your site is public accessible, so:
 
-- If your site is on local computer (localhost), you need to upload it to a liver server (which people can access to from internet)
-- Joomla allows you to turn of your site offline mode. If you use offline mode, PayPal won't work, so you need to make your site Online (Go to System - Global Configuration, set Offline parameter to No)
-- If frontend of your site is protected by username and password (htaccess/server protection) - usually happens during development while you don't want users to see the site on development mode, please turn off this protection
+- If your site runs on localhost, move it to a live server that is accessible over the internet.
+- In System - Global Configuration, set Offline to No so PayPal can reach your site.
+- If the frontend is password-protected, for example through .htaccess or your server settings, turn off that protection so PayPal can reach the site.
 
 2. Make sure PayPal IPN is enabled in your PayPal account (the one which receives payment)
 
-By default, PayPal IPN is turned on in your PayPal account. Each time a payment processed, PayPal will send an IPN message to Events Booking to notify this payment. If for some reasons, PayPal IPN is turned off on your PayPal account, Membership Pro won't work and you will need to turn it on.
+By default, PayPal IPN is turned on in your PayPal account. Each time a payment processed, PayPal will send an IPN message to Events Booking to notify this payment. If for some reason, PayPal IPN is turned off on your PayPal account, Membership Pro won't work and you will need to turn it on.
 
 - Follow the instructions at [https://www.jotform.com/help/276-How-to-Enable-IPN-for-Paypal](https://www.jotform.com/help/276-How-to-Enable-IPN-for-Paypal) to enable PayPal IPN in the PayPal account which receive payment on your site. PayPal will ask for IPN URL, simply enter URL of your site into that parameter
 - Go to Events Booking -> Payment Plugins, click on os_paypal payment plugin to edit, set Log IPN Messages parameter to Yes. 

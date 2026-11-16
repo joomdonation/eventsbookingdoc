@@ -5,11 +5,11 @@ taxonomy:
         - docs
 ---
 
-This is another nice and powerful feature of custom field in Events Booking. It allows you to limit **number of registrants** can select certain options in a custom field (Radio, Checkbox, Select, Multiple select)
+Use a quantity field to limit the **number of registrants** who can select a specific option in a Radio, Checkbox, Select, or Multiple select field.
 
-For example, you create an event with capacity set to 16 (only 16 registrants can register for the event). In total 16 registrants, you only want to allow 8 Males and 8 Females to register.
+For example, suppose your event has 16 places and you want to allow 8 Males and 8 Females to register.
 
-To do that, you can create a custom field called Gender which allows choose Gender of the registrant when users register for the event :
+Create a custom field called Gender with the following settings.
 
 1. Field Type : **Radio**
 2. Name : **eb_gender**
@@ -18,8 +18,8 @@ To do that, you can create a custom field called Gender which allows choose Gend
 3. Quantity Field: Set to **Yes**
 4. Quantity Values: **8**, **8**. Each value in one line. Please note the mapping 1-1 between the options in **Values property** and the options in **Quantity Values** property of the custom field
 
-With the above settings, there will be only maximum 8 registrants can choose Male option for Gender field. Same for Female option
+With these settings, up to eight registrants can select each option.
 
-With a quantity field, when number registrants select an option reach it limit (defines in Quantity Values field), that option won't be available for other registrants to choose anymore. When there is no other options available (because all the options has reach it limit), Events Booking will disable registration for the event.
+Once an option reaches its limit in Quantity Values, it becomes unavailable to new registrants. If every option reaches its limit, Events Booking disables registration for the event.
 
 ![Sample Custom Quantity Field](quantity_field.png)

@@ -3,10 +3,10 @@ title: 'Related Events'
 published: true
 ---
 
-This plugin allows you to link related events to the primary/main event. It allows users to discover and register for associated events easier. If you want to use this feature
+Link related events to a main event so visitors can find and register for them. To set up related events, follow these steps.
 
 1. Go to Extensions -> Plugins Manager, find and enable the plugin **Events Booking - Related Events**
-2. Now, when you add/edit event, you will see a new tab called **Related Events**. There you can enter IDs of the related events of the current main event. On frontend of your site, when users view the main event, it's related events will be displayed at the bottom
+2. When you add or edit an event, open **Related Events** and enter the IDs of the events you want to link. Visitors will see them at the bottom of the main event page.
 
 
 ![related_events_settings](related_events_settings.png "related_events_settings")

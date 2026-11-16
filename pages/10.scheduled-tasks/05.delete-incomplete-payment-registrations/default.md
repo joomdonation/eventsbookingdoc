@@ -4,18 +4,18 @@ media_order: task-eventsbooking-delete-incomplete-payment-registrations.png
 published: true
 ---
 
-This scheduled task is used to remove the registration records which choose to use online payment methods such as PayPal, Stripe.... but did not complete payment (ignore payment process or payment failed for whatever reasons) after certain (configurable) number of days. That help clean up unnecessary data store in database tables, thus save hosting space. To use this feature:
+Use this task to remove registrations that are still unpaid after a configurable number of days. It applies to registrations that used an online payment method such as PayPal or Stripe and whose payment was skipped or failed. Removing these records reduces the data stored in the database.
 
 ## Create and configure the scheduled task
 
-1. Go to **System -> Plugins**, make sure **Task - Events Booking** plugin is enabled.
-2. Go to **System -> Scheduled Tasks**, press New button in the toolbar to create a new scheduled task for **Events Booking - Delete Incomplete Payment Registrations** task type.
-3. Setup all required parameters, save it.
+1. Go to **System -> Plugins** and make sure the **Task - Events Booking** plugin is enabled.
+2. Go to **System -> Scheduled Tasks**, click New in the toolbar to create a new scheduled task for **Events Booking - Delete Incomplete Payment Registrations** task type.
+3. Set the required parameters and save the task.
 
 ![task-eventsbooking-delete-incomplete-payment-registrations](task-eventsbooking-delete-incomplete-payment-registrations.png "task-eventsbooking-delete-incomplete-payment-registrations")
 
 ## Task Basic Fields
-This scheduled task does not need to run so often. It could be run every few days, for example, every 3 days, so you can setup **Basic Fields** to following values
+Running the task every few days is enough. The settings below run it every three days. Use them under **Basic Fields**.
 
 - **Execution Rule**: Set to **Interval, Days**
 - **Interval in Days**: Set to the number you want, for example, if you set it to 3, the task will be run every 3 days.

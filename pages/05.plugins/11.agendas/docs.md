@@ -3,12 +3,12 @@ title: Agendas
 media_order: 'agendas_display.png,agendas.png'
 ---
 
-This plugin allows you to add and display agendas for an event, see [https://demo.joomdonation.com/eventsbooking/features/advanced-features/agendas-speakers-sponsors](https://demo.joomdonation.com/eventsbooking/features/advanced-features/agendas-speakers-sponsors) , look at **Agendas**  section for a sample event which has agendas feature.
+Use this plugin to add an agenda to an event and display it on the event page. For an example, see the **Agendas** section at [https://demo.joomdonation.com/eventsbooking/features/advanced-features/agendas-speakers-sponsors](https://demo.joomdonation.com/eventsbooking/features/advanced-features/agendas-speakers-sponsors).
 
 To use this feature:
 
 1. Go to **System -> Plugins Manager**, find and publish the plugin **Events Booking - Agendas**.
-2. Now, when you add/edit event, you will see a new tab **Agendas** allowing to setup agendas for that event and agendas will be displayed on event details page.
+2. When you add or edit an event, open **Agendas** to set up the agenda. Events Booking displays it on the event details page.
 
 ![agendas](agendas.png "agendas")
 

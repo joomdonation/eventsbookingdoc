@@ -4,8 +4,8 @@ visible: true
 ---
 
 ## The difference:
-- The **EB Stripe** payment plugin allow users to enter credit card payment information directly on your site for processing payment.
-- The **EB Stripe Checkout** payment plugin redierct users to Stripe website for processing payment.
+- The **EB Stripe** payment plugin lets registrants enter their credit card details directly on your site.
+- The **EB Stripe Checkout** payment plugin redirects registrants to Stripe’s website to pay.
 
 ## Which one to use
 - If your business is affected by SCA requirement [https://stripe.com/docs/strong-customer-authentication#impacted-businesses](https://stripe.com/docs/strong-customer-authentication#impacted-businesses) , you need to use **EB Stripe Checkout** payment plugin to be compatible with that requirement

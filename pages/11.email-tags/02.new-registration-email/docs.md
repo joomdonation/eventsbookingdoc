@@ -2,7 +2,7 @@
 title: 'New Registration Email'
 ---
 
-This is the email sent to administrator and registrant when registrant registers for an event.
+Events Booking emails the administrator and the registrant when someone registers for an event.
 
 ## Registration Email
 - For the email send to the person who makes the registration and administrator, You can use all tags as described in [Common Tags](/email-tags/common-tags)
@@ -12,10 +12,10 @@ This is the email sent to administrator and registrant when registrant registers
 + If it is paid event and registrant uses offline payment method, the subject and email is configured in **User Email Subject** and **User Email Body (Offline Payment)**
 + If registrant uses an online payment method such as PayPal or the event they registered for is free, the subject and email is configured in **User Email Subject** and **User Email Body**.
 
-Please note that if it is needed, you can define these messages for each event on add/edit event page in Messages tab. If you enter messages inside the event, it will override the messages defined in Events Booking -> Emails & Messages.
+Please note that if needed, you can define these messages for each event on add/edit event page in Messages tab. If you enter messages inside the event, it will override the messages defined in Events Booking -> Emails & Messages.
 
 ## Email send to group members
-This is the email sent to group members in a group registration
+Events Booking emails the administrator and the registrant when someone registers for an event.
 
 - [REGITRATION_DETAILS]: Contains all information of the registration
 - [PAYMENT_METHOD]

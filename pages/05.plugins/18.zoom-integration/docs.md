@@ -3,7 +3,7 @@ title: 'Zoom Integration'
 media_order: 'Events Booking Zoom Plugin Instructions.pdf,zoom-settings.png'
 ---
 
-This plugin allows you to register registrants of your events automatically to the a Zoom Meeting/Webinar you want.
+Automatically register event attendees for a Zoom meeting or webinar.
 
 ## Enable and Configure the plugin
 
@@ -17,7 +17,7 @@ This plugin allows you to register registrants of your events automatically to t
 ![zoom-settings](zoom-settings.png "zoom-settings")
 
 ## Send Meeting/Webinar Information To Registrant
-If you want to send meeting/webinar information to your registrant, you can use the following tags in the email message
+Use the following email tags to send meeting or webinar details to registrants.
 
 [ZOOM_START_TIME] : Start time of the meeting/webinar
 
@@ -28,7 +28,7 @@ If you want to send meeting/webinar information to your registrant, you can use 
 
 ## Troubleshooting
 
-Sometime, when you added the tags above the email message, it is not being replaced properly with the actual zoom data. When that happens, please check and make sure the webinar/meeting you created have Registration Enabled. See:
+Sometimes, when you added the tags above the email message, it is not being replaced properly with the actual zoom data. When that happens, please check and make sure the webinar/meeting you created have Registration Enabled. See:
 
 [Scheduling a webinar with registration](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061631) and [Scheduling and customizing a meeting with registration](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065026) for detailed instructions
 

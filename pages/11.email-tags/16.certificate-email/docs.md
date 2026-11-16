@@ -3,11 +3,11 @@ title: 'Certificate Email'
 published: true
 ---
 
-This email is sent to registrant when admin/manager select a registration record and use **Send Certificate** button in the toolbar to send certificate to that selected registrant.
+Events Booking emails the certificate to the registrant when an administrator or manager selects the registration record and clicks **Send Certificate** in the toolbar.
 
 The subject and message of the email can be configured in **Registration Email Messages** tab: **Certificate Email Subject
 ** and **Certificate Email Body**
 
-For this email, you can use any tags listed in [Common Tags](/email-tags/common-tags)
+You can use any tag listed in [Common Tags](/email-tags/common-tags) in this email.
 
 Note that the system will allow attach certificate in the attachment of the email.

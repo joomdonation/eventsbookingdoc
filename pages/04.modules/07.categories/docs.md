@@ -4,11 +4,11 @@ media_order: mod_eb_categories.png
 visible: true
 ---
 
-This module displays list of categories to allow users to click on to view events from each category.To use this module, please create an instance of **Events Booking - Event Categories** module and publish it on a module position on your site template. 
+Visitors can select a category in this module to see its events. To use it, create an instance of **Events Booking - Event Categories** and publish it in a module position in your site template.
 
 ![Events Booking - Event Categories](mod_eb_categories.png)
   
-The up-coming events module has following parameters:
-1. **Parent Category Id**: If you enter ID of a category here, the module will only display children categories of that category. Otherwise, top level categories will be displayed.
-2. **Number Categories**: Number of Categories to be displayed on the module
-3. **Itemid**: Enter ID of the default menu item will be used generate SEF link to the categories in the module in case there is no menu item could be detected for the category. Something related to SEF router, leave it empty and the module will use default menu item.
+The module has the following parameters.
+1. **Parent Category Id**: Enter a category ID to display only its subcategories. Leave it blank to display top-level categories.
+2. **Number Categories**: Set how many categories to display.
+3. **Itemid**: Enter the ID of the menu item to use for SEF links to categories in this module when Events Booking cannot find a matching menu item. Leave it blank to use the default menu item.

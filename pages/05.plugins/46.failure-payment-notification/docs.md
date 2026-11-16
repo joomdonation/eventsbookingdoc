@@ -3,12 +3,12 @@ title: 'Failure Payment Notification'
 published: true
 ---
 
-This plugin allows sending notification emails to users you want (usually administrators) when a payment for registration failure for some reasons.
+Notify selected recipients, typically administrators, when a registration payment fails.
 
 ## Configure The Plugin
-To use this plugin, you need to go to **System -> Plugins**, find and enable **Events Booking - Failure Payment Notification** plugin. It has following parameters, you can be changed it to meet your own need:
+Go to **System -> Plugins** and enable **Events Booking - Failure Payment Notification**. Adjust the following settings as needed.
 
-- **Notification Emails**: Enter emails you want to receive notification, comma separated. For example email1@domain.com,email2@domain.com. If you leave it empty, the **Notification Emails**  in event or in Events Booking -> Configuration will receive notifications.
+- **Notification Emails**: Enter emails you want to receive a notification, comma separated. For example email1@domain.com,email2@domain.com. If you leave it empty, the **Notification Emails**  in event or in Events Booking -> Configuration will receive notifications.
 - **Subject**: Subject of the notification email.
 - **Message**: Message of the notification email.
 

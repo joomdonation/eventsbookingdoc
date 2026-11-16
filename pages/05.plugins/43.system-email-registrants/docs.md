@@ -7,10 +7,10 @@ media_order: 'curl.png,system-email-registrants.png'
 >>> This plugin was removed from version 5.0.7. Please use **[Events Booking - Email Registrants List](/scheduled-tasks/email-registrants-list)** scheduled task instead.
 
 
-This plugin allows you to send registrants of events (in CSV/Excel format) automatically to administrator and event creator/owner X days/hours before event started.
+This plugin automatically emails a registrant list in CSV or Excel format to the administrator and the event creator or owner a set number of days or hours before an event starts.
 
 ## Configure The Plugin
-To have system send registrants to administrators email, you need to go to **System -> Plugins**, find and enable **System - Email Registrants** plugin. The plugin will be run every 20 minutes (the frequency is configurable) to check and send emails to administrators. It has following parameters, you can review and change it to meet your own need if needed
+Go to **System -> Plugins** and enable **System - Email Registrants**. By default, the plugin checks every 20 minutes whether it needs to email a registrant list. You can change the interval and the other settings below.
 
 - **Number Of Days/Hours**: Enter Number Of Days/Hours **before Event Date** the system will prepare registrants list in Excel/CSV file and send it to administrators.
 - **Days Or Hours**: Together with **Number Of Days/Hours** parameter, it will control how many days (if this parameter set to **Days**) or hours (if this parameter set to **Hours**) before event date, the registrants list will be emailed.
@@ -19,7 +19,7 @@ To have system send registrants to administrators email, you need to go to **Sys
 
 ## Configure Email Subject and Email Body
 
-Go to Events Booking -> Emails & Messages, find the two items below and change it to meet your own need if needed:
+Go to Events Booking -> Emails & Messages, find the two items below and change it to suit your needs if needed:
 
 - **Send Registrants List Email Subject**
 - **Send Registrants List Email Body**
@@ -28,7 +28,7 @@ You can use any tags listed in this page [Event Information Tags](/email-tags/co
 
 
 ## Use Cron Job
-By default, Events Booking uses a system plugin to trigger sending registrants emails process. That mean it requires someone access to the site (search engine bots are also counted) to trigger process. Sometime, it is not reliable or causes multiple  emails sent to administrators in case your site has a very high traffic. To address that limitation, you can setup cron job from your hosting account to trigger sending registrants instead. Please see detailed instructions below:
+By default, Events Booking uses a system plugin to trigger sending registrants emails process. That mean it requires someone access to the site (search engine bots are also counted) to trigger process. Sometimes, it is not reliable or causes multiple  emails sent to administrators in case your site has a very high traffic. To address that limitation, you can set up cron job from your hosting account to trigger sending registrants instead. Please see detailed instructions below:
 
 1. Go to **System** -> **Plugins**, find the plugin **System - Email Registrants** , click on it to edit. You should see a  parameter called **Trigger Code** . Enter a secret string there.
 

@@ -3,90 +3,90 @@ title: 'Check-in Registrants using QRCODE'
 media_order: HandHeldQR-Scanner.png
 ---
 
-**Events Booking** supports generating QRCODE for each registration and use that QRCODE to checkin registrants when they come and attend your events.
+**Events Booking** can generate a QR code for each registration so you can check in registrants when they arrive.
 
 ## How it works
-1. When registrants register for an event, Events Booking will generate a QRCODE (which points to an unique URL in Events Booking to check-in that registrant). That QRCODE will be displayed on the thank you message and in the email sent to registrant after he completes the registration
-2. The registrant print that thank you message (or confirmation email) contains the QRCODE, bring it as the ticket to the event
-3. When you receive that ticket, you can use your smartphone (which has a QRCODE reader APP installed) to scan that QRCODE:
-* If the QRCODE is valid, the registrant will be successfully checked in (stauss changed to checked in) and there will be a success message displayed so that you know that this ticket is valid
-* For individual registration, each QRCODE can be checkedin one time only
-* For group registration, each QRCODE can be checked in in X-times (X equals to number of registrants in the group).
-* If the QRCODE is invalid (invalid code or it was used for checked in before), the system will display a failed message and you know that the ticket is invalid.
+1. When someone registers, Events Booking generates a QR code that points to a unique check-in URL for that registration. It displays the code in the thank-you message and the confirmation email.
+2. The registrant prints the thank-you message or confirmation email with the QR code and brings it to the event as their ticket.
+3. When the registrant presents the ticket, scan the QR code with a QR code reader app on your phone.
+* If the QR code is valid, Events Booking checks in the registrant, updates the check-in status, and displays a success message.
+* For an individual registration, the QR code can be used to check in once.
+* For a group registration, the QR code can be used once per registrant in the group.
+* If the QR code is invalid (invalid code or it was used for checked in before), the system will display a failed message and you know that the ticket is invalid.
 
 ## Checkin Registrants Using Built-In QRCODE Scanner
-Events Booking has a built-in QRCODE scanner which you can use to check-in registrants. With this built-in scanner, you do not have to install any mobile app for checking in registrants. This is a recommended method for checkin registrants in Events Booking.
+Use the built-in QR code scanner to check in registrants from your mobile browser without installing a separate app. This is a recommended check-in method.
 
 **To use this method**:
-- Insert **[TICKET_QRCODE]** tag into **Thank you message** or **User Email Body** message or **invoice layout** or **Ticket PDF layout** (if you are using tickets PDF feature) in Events Booking.
-- Create a menu item to link to **QRCODE Scanner** menu item type of Events Booking. By default, the system set time between too scans/checkins to 15 seconds (to avoid to many checkin requests performed in a short time, could be unexpected behavior). If you want to scan tickets faster (for example, time between checkin two registrants to 5 seconds), you can change **Checkin Interval** parameter to 5. This menu item should only be visible to users from group which has Registrants Management permission.
-- Using the browser from your mobile, login to your site using an account which has **Registrants Management** permission. Then access to that menu item above, press **Start Scanning** button to request permission to use your phone camera to checkin.
-- Each time you want to check in someone, just scan their tickets using the QRCODE scanner from the above page.
+- Insert **[TICKET_QRCODE]** in the **Thank you message**, **User Email Body**, **invoice layout**, or **Ticket PDF layout** if you use PDF tickets.
+- Create an Events Booking menu item of type **QRCODE Scanner**. Events Booking waits 15 seconds between scans by default to avoid processing too many check-ins in a short time. To shorten the wait to five seconds, set **Checkin Interval** to 5. Make this menu item visible only to groups with Registrants Management permission.
+- On your phone, open your browser and log in with an account that has **Registrants Management** permission. Open the menu item and click **Start Scanning** to grant access to the phone’s camera.
+- Scan each ticket on that page to check in the registrant.
 
-**Events Booking** supports generating QRCODE for each registration and use that QRCODE to checkin registrants when they come and attend your events.
+**Events Booking** can generate a QR code for each registration so you can check in registrants when they arrive.
 
 ## How it works
-1. When registrants register for an event, Events Booking will generate a QRCODE (which points to an unique URL in Events Booking to check-in that registrant). That QRCODE will be displayed on the thank you message and in the email sent to registrant after he completes the registration
-2. The registrant print that thank you message (or confirmation email) contains the QRCODE, bring it as the ticket to the event
-3. When you receive that ticket, you can use your smartphone (which has a QRCODE reader APP installed) to scan that QRCODE:
-* If the QRCODE is valid, the registrant will be successfully checked in (stauss changed to checked in) and there will be a success message displayed so that you know that this ticket is valid
-* For individual registration, each QRCODE can be checkedin one time only
-* For group registration, each QRCODE can be checked in in X-times (X equals to number of registrants in the group).
-* If the QRCODE is invalid (invalid code or it was used for checked in before), the system will display a failed message and you know that the ticket is invalid.
+1. When someone registers, Events Booking generates a QR code that points to a unique check-in URL for that registration. It displays the code in the thank-you message and the confirmation email.
+2. The registrant prints the thank-you message or confirmation email with the QR code and brings it to the event as their ticket.
+3. When the registrant presents the ticket, scan the QR code with a QR code reader app on your phone.
+* If the QR code is valid, Events Booking checks in the registrant, updates the check-in status, and displays a success message.
+* For an individual registration, the QR code can be used to check in once.
+* For a group registration, the QR code can be used once per registrant in the group.
+* If the QR code is invalid (invalid code or it was used for checked in before), the system will display a failed message and you know that the ticket is invalid.
 
 ## Checkin Registrants handheld scanner 
-It works similar with **Checkin Registrants Using Built-In QRCODE Scanner** described above. You create a menu item to link to **Handheld QRCODE Scanner** menu item type of Events Booking. Users with registrants management permission will be allowed to access to that menu item, see a form with a text input. When the handheld scanner scan QRCODE, the ticket code will be added to the input, the form will be submitted and display check-in result 
+As with **Checkin Registrants Using Built-In QRCODE Scanner**, create an Events Booking menu item, this time of type **Handheld QRCODE Scanner**. Users with registrant management permission can open it to see a form with a text field. When you scan the QR code, the scanner enters the ticket code in the field. The form submits and displays the check-in result.
 
 ![HandHeldQR-Scanner](HandHeldQR-Scanner.png "HandHeldQR-Scanner")
 
 ## Checkin Registrants Using QRCode Plus app
-The [QRCode Plus](https://apps.apple.com/app/id937791963) is a free **IOS** app which can be used to checkin registrants in Events Booking. This is the recommended method because:
+The [QRCode Plus](https://apps.apple.com/app/id937791963) is a free **IOS** app which can be used to check in registrants in Events Booking. This is the recommended method because:
 - The app is free. So you do not have to purchase a mobile app for checking in registrants
-- It is fast and simple to checkin registrants using this app
-- You do not have to login to frontend of your site to checkin registrants
+- The app makes check-in quick and simple.
+- You can check in registrants without logging in to the frontend of your site.
 
 **To use this method**:
-- Install that app to your IOS device (IPhone or Ipad)
-- Insert **[TICKET_QRCODE]** tag into **Thank you message** or **User Email Body** message or **invoice layout** or **Ticket PDF layout** (if you are using tickets PDF feature) in Events Booking.
-- Go to Events Booking -> Configuration, enter a random string into **Checkin API Key** config option.
+- Install the app on your iPhone or iPad.
+- Insert **[TICKET_QRCODE]** in the **Thank you message**, **User Email Body**, **invoice layout**, or **Ticket PDF layout** if you use PDF tickets.
+- Go to Events Booking -> Configuration and enter a random string in **Checkin API Key**.
 - Configure the **QRCode Plus** app which you installed. Enter the parameters below:
 + URL: Enter https://domain.com/index.php?option=com_eventbooking&task=scan.qr_code_plus&api_key=[API_KEY] . Of course you need to replace https://domain.com with URL of your site. [API_KEY] needs to be replaced with the string you entered in **Checkin API Key** config option.
 + **Method**: Choose **Post**.
 + **Key Name**: Set to **code**
-- When registrants give you the ticket, you can scan the QRCODE in the ticket to process checkin registrants as described in **How it works** section above.
+- Scan the QR code on each ticket to check in registrants, as described in **How it works** above.
 
 ## Checkin registrants using CodeREADr mobile app
-This method can only be used if you are using Tickets PDF feature. Below are the steps using CodeREADr mobile app & service [https://www.codereadr.com/](https://www.codereadr.com)
-- Each ticket generated has an unique code. It is a random string with 32 characters length
-- When you design the ticket, remember to use **[TICKET_QRCODE]** tag. Events Booking will then generate QRCODE for the ticket with the unique ticket code above
+This method requires the Tickets PDF feature. Follow the steps below to use the CodeREADr mobile app and service [https://www.codereadr.com/](https://www.codereadr.com).
+- Each ticket has a unique, 32-character code.
+- Add **[TICKET_QRCODE]** to the ticket layout. Events Booking generates a QR code using the unique ticket code.
 - Go to Events Booking, Registrants, select the event you want, then export registrants into CSV/Excel file. Before exporting, please go to Events Booking -> Configuration, set Include Group Billing Records in Registrants Management to No so that only group members will be exported
 - Sign up for an account on https://www.codereadr.com/
 - Download and install the mobile APP provided in the website
 - Follow the first three steps on this page https://www.codereadr.com/kb/databases/ to prepare and import registrants into the website
--Now, you can use their mobile APP for checkin registrants/
+- Use the mobile app to check in registrants.
 
 ## Checkin registrants Using QRCODE reader APP
 This method has some disadvantages compare to use iCODY APP:
-- It requires you to login to frontend of your site while scanning QRCODE
-- It opens your mobile web browser to run the scanned URL returned by QRCODE each time you scan QRCODE from ticket.
+- You must log in to the frontend before scanning tickets.
+- Each scan opens the URL from the ticket’s QR code in your mobile browser.
 - As you can imagine, it is much slower compare to use iCODY APP. So this should only be used if you don't have too much registrants.
 
 **To use this method**
 1. You insert **[QRCODE]** tag into **Thank you message** or **User Email Body** message or **invoice layout** or **Ticket PDF layout** (if you are using tickets PDF feature) in Events Booking.
-2. Registrants can print one of the item above (image, invoice, ticket) (depends on which one to use) and bring as a ticket to the event
-3. The person who has responsibility to check-in registrants will:
-* Login to the frontend of your site using a mobile device which can scan QR code (such as Iphone). We test it using Iphone and use this APP https://itunes.apple.com/us/app/qr-code-reader-by-scan/id698925807?mt=8 for scanning QR code. Feel free to use any QRCODE reader APP you like
-* The account which used to login **must be a super admin account or an account which as Registrants Management** in Events Booking
-* When registrants give him the ticket, he can use the QRCODE reader APP above to scan that QRCODE to check-in registrant
+2. Registrants can print the message, invoice, or ticket containing the QR code and bring it to the event.
+3. The person checking in registrants follows these steps.
+* Log in to the frontend on a device that can scan QR codes, such as an iPhone. We tested with this iPhone app https://itunes.apple.com/us/app/qr-code-reader-by-scan/id698925807?mt=8 . You can use any QR code reader app.
+* Use a **super admin account or an account which as Registrants Management** in Events Booking.
+* Scan the QR code on the registrant’s ticket with the app to check them in.
 
 ## Check-in registrants manually
-If you simply want to see manage who has checked in, who has not, you can simply access to backend of your site, filter the Registrants by Event and Checked in status
+To see who has checked in, open the registrants list in the administrator area and filter by Event and Checked in status.
 
 You can also check in registrants manually, see instructions at [https://docs.joomdonation.com/eventsbooking/registrants-management/checkin-checkout-registrants](/registrants-management/checkin-checkout-registrants)
 
 ## Display Registrants Information In Checkin Messages
 
-When you checkin registrants use QRCODE, the system will display checkin result messages. It is controlled by one of the message items below:
+When you scan a QR code to check in a registrant, Events Booking displays one of these messages.
 
 - EB_INVALID_REGISTRATION_RECORD
 - EB_REGISTRANT_ALREADY_CHECKED_IN
@@ -96,4 +96,4 @@ When you checkin registrants use QRCODE, the system will display checkin result 
 - EB_CHECKED_IN_PAST_EVENT
 - EB_CHECKED_IN_FUTURE_EVENT
 
-If you want to change the message, go to Events Booking -> Translations, find these language items and change it to meet your need. You can tags such as [FIRST_NAME], [LAST_NAME]... (basically, same with the tags with you can use in email to display any information you want). See [Common Tags](/email-tags/common-tags) for the tags which you can use
+To edit the messages, go to Events Booking -> Translations and find the language items above. You can insert tags such as [FIRST_NAME] and [LAST_NAME] to display registrant details. See [Common Tags](/email-tags/common-tags) for supported tags.

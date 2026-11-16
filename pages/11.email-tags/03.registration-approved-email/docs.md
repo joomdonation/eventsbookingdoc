@@ -2,4 +2,4 @@
 title: 'Registration Approved Email'
 ---
 
-For this email, you can use any tags listed in [Common Tags](/email-tags/common-tags)
+You can use any tag listed in [Common Tags](/email-tags/common-tags) in this email.

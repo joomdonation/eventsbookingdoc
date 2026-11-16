@@ -4,7 +4,7 @@ published: true
 media_order: 'e-invovice-basic-parameters.png,e-invoice-seller-information.png,e-invoice-seller-contact-information.png'
 ---
 
-This plugin enables automatic generation of electronic invoices (e-invoices) alongside the standard PDF invoice issued by the Events Booking. When someone registers for your events, the plugin creates a compliant e-invoice in XML format (e.g., ZUGFeRD or XRechnung) and send it to both admin and registrant emails (together with PDF invoice), making it suitable for customers who require electronic invoicing for tax or regulatory purposes.
+This plugin generates an electronic invoice alongside the standard Events Booking PDF invoice. When someone registers for an event, it creates an XML e-invoice in a format such as ZUGFeRD or XRechnung and emails it with the PDF invoice to the administrator and the registrant.
 
 If you are using Events Booking in a country which requires e-invoices, please purchase the plugin at [https://joomdonation.com/joomla-extensions/events-booking-joomla-events-registration.html](https://joomdonation.com/joomla-extensions/events-booking-joomla-events-registration.html) (look at Paid Add-ons tab), install, and enable **Events Booking - EInvoice** plugin.
 
@@ -28,6 +28,6 @@ On this tab, you provide the contact person of your country Like **Name**, **Dep
 ![e-invoice-seller-contact-information](e-invoice-seller-contact-information.png "e-invoice-seller-contact-information")
 
 
-After entering all necessary information, you can enable the plugin. And now, each time the PDF invoice is generated, the xml invoice will be generated and sent to admin and registrant email as well.
+After entering all necessary information, you can enable the plugin. And now, each time the PDF invoice is generated, the xml invoice will be generated and sent to the administrator and the registrant email as well.
 
 >>> If you use Events Booking 5.0.7 or earlier, please make sure accessing to My Downloads menu item on our website, download latest package of Events Booking from there and update it to your site. This plugin requires Events Booking 5.0.8+ (or 5.0.7 installed after 18 June 2025 to work)

@@ -3,4 +3,4 @@ title: 'Input Mask'
 published: true
 ---
 
-Events Booking is now integrated with Input Mask library from [imask.js.org](https://imask.js.org/) to allow you to define input mask for each custom field to force users to enter data in the format you want. You can use [Regex](https://imask.js.org/guide.html#masked-base) or [Pattern](https://imask.js.org/guide.html#masked-pattern)  to define input mask for your custom fields.
+Events Booking uses the Input Mask library from [imask.js.org](https://imask.js.org/) to make sure users enter custom field values in the expected format. You can define a mask using a [Regex](https://imask.js.org/guide.html#masked-base) or a [Pattern](https://imask.js.org/guide.html#masked-pattern).

@@ -4,9 +4,9 @@ visible: true
 published: true
 ---
 
-This is the email sent to user when his event (which is submitted from frontend of site) is approved/published.
+Events Booking emails the user when an event they submitted from the frontend is approved and published.
 
-- Go to Events Booking -> Emails & Messages, look at **Submit Event Email Messages** tab, find and change the two items **Event Approved Email Subject** and **Event Approved Email Body** to meet your need.
+- Go to Events Booking -> Emails & Messages, look at **Submit Event Email Messages** tab, find and change the two items **Event Approved Email Subject** and **Event Approved Email Body** to suit your needs.
 - The following tags are supported:
 
 [USERNAME] : Username of the event creator.

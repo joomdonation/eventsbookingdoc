@@ -4,7 +4,7 @@ media_order: 'task-delete-old-eb-invoices.png,task-delete-old-pdf-tickets.png,ta
 published: false
 ---
 
-The plugin **Task - Events Booking House Keeping** is a Joomla Task Scheduler plugin to perform various clean up to Events Booking database and storage like deleting old invoices, tickets, certificates, remove registration records which use online payment methods but did not process payment....Go to **System** -> **Plugins**, find and enable **Task - Events Booking House Keeping** plugin. Then access to **System - Scheduled Tasks**, press **New** button to create task to perform data clean up operation:
+**Task - Events Booking House Keeping** is a Joomla Task Scheduler plugin that removes old invoices, tickets, and certificates, as well as unpaid registrations that used an online payment method. Go to **System** -> **Plugins** and enable **Task - Events Booking House Keeping**. Then go to **System - Scheduled Tasks** and click **New** to create a cleanup task.
 
 ## Events Booking - Delete Old Invoices
 

@@ -3,4 +3,4 @@ title: 'Disable Certain Email'
 published: true
 ---
 
-To disable any emails sent from Events Booking, you just need to go to **Events Booking -> Emails & Messages**, find the subject of the email you want to disable (you can enter the the subject into the search box for searching) and empty it.
+To disable an email, go to **Events Booking -> Emails & Messages**, find the email’s subject, and clear it. You can use the search box to find the subject.

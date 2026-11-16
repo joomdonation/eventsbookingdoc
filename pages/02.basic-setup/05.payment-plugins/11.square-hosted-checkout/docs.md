@@ -6,7 +6,7 @@ media_order: 'sandbox_access_token.png,sandbox_location_id.png,webhook_signature
 ---
 
 ## Installation
-When you purchase the payment plugin, you will receive a zip file called **os_eb_squarehostedcheckout.zip**. Go to **Events Booking** -> **Payment Plugins** to install it as any other payment plugin. See [**Install Payment Plugin**](/basic-setup/payment-plugins#install-new-payment-plugin) for installation instructions if needed.
+After purchasing the plugin, go to **Events Booking** -> **Payment Plugins** and install **os_eb_squarehostedcheckout.zip**. See [**Install Payment Plugin**](/basic-setup/payment-plugins#install-new-payment-plugin) for the steps.
 
 ## Configuration
 

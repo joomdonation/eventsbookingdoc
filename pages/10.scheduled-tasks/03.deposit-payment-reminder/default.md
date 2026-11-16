@@ -4,16 +4,16 @@ media_order: task-eventsbooking-deposit-payment-reminder.png
 published: true
 ---
 
-If you enable [**Deposit Payment**](/basic-setup/deposit-payment) for your events, you can use use this scheduled task to send reminders emails to registrants to remind them to complete remaining payment for the registration if that remaining payment amount is not received certain number of days before event date:
+Use this task with [**Deposit Payment**](/basic-setup/deposit-payment) to remind registrants to pay their remaining balance a set number of days before the event.
 
-1. Go to **System -> Plugins**, make sure **Task - Events Booking** plugin is enabled.
-2. Go to **System -> Scheduled Tasks**, press **New** button in the toolbar to create a new scheduled task for **Events Booking - Deposit Payment Reminder** task type.
-3. Setup all required parameters, save it.
+1. Go to **System -> Plugins** and make sure the **Task - Events Booking** plugin is enabled.
+2. Go to **System -> Scheduled Tasks**, click **New** in the toolbar to create a new scheduled task for **Events Booking - Deposit Payment Reminder** task type.
+3. Set the required parameters and save the task.
 
 ![task-eventsbooking-deposit-payment-reminder](task-eventsbooking-deposit-payment-reminder.png "task-eventsbooking-deposit-payment-reminder")
 
 ## Task Basic Fields
-This scheduled task should be run several times per day. Each time it runs, it will process to 10 - 15 registrants, so you can setup **Basic Fields** to following values
+Run this task several times a day. Each run processes 10 to 15 registrants. Use the following values under **Basic Fields**.
 
 - **Execution Rule**: Set to **Interval, Hours**
 - **Interval in Hours**: Set to the number you want, for example, if you set it to 1, the task will be run every 1 hour.

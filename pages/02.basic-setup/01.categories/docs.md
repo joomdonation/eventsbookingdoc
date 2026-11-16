@@ -9,18 +9,18 @@ process:
     twig: true
 ---
 
-**Events Booking** allows you to organize your events cross infinite categories and subcategories (nested categories). On a typical event registration system, you will have different categories to organize your events. 
+**Events Booking** lets you organize events into categories and subcategories. You can nest categories at any depth.
 
-To access to categories management page, there are 3 different ways:
+Open the categories management page in any of these three ways.
 
-1. Access to **Events Booking -> Categoires**.
-2. Access to Evets Booking Dashboard, then click on Categories icon.
-3. On any pages in Events Booking, access to **Setup -> Categories**.
+1. Go to **Events Booking -> Categoires**.
+2. Open the Events Booking Dashboard and click the Categories icon.
+3. From any Events Booking page, go to **Setup -> Categories**.
 
 ![Categories](categories.png)
 
 ## Add new category
-Press **New** button in the toolbar to create new category. A form will be displayed to allow you to enter information of the category:
+Click **New** in the toolbar to create a category. The form below opens.
 
 ![Add New Category](new_category.png)
 
@@ -33,31 +33,31 @@ Press **New** button in the toolbar to create new category. A form will be displ
 <tbody>
 <tr>
 <td><strong>Name</strong></td>
-<td>Name (title) of the category. The name will be displayed to end-users.</td>
+<td>The category name visitors see.</td>
 </tr>
 <tr>
 <td><strong>Alias</strong></td>
-<td>Alias will be used to generate the URL link to the category (and events belong to that category). If you unsure what to enter, simply leaves it empty and the system will generate the alias based on the name of category.</td>
+<td>The alias is used in URLs for the category and its events. If you leave it blank, Events Booking generates an alias from the category name.</td>
 </tr>
 <tr>
 <td><strong>Parent</strong></td>
-<td>Select parent of this category. Set it to <strong>Select Category</strong> and it will become top level category.</td>
+<td>Choose a parent category, or select <strong>Select Category</strong> to create a top-level category.</td>
 </tr>
 <tr>
 <td><strong>Image</strong></td>
-<td>Choose image for the category. The image you select here will be displayed on categories list and category detail page.</td>
+<td>Choose the image to display in the categories list and on the category details page.</td>
 </tr>
 <tr>
 <td><strong>Layout</strong></td>
-<td>Select the layout you want to use to display events from this category. At the moment, there are 4 layout types supported: Default Layout, Table Layout, Calendar Layout, Timeline Layout</td>
+<td>Choose how to display events from this category. The four supported layouts are Default Layout, Table Layout, Calendar Layout, and Timeline Layout.</td>
 </tr>
 <tr>
 <td><strong>Color</strong></td>
-<td>If you select a color here, all events of this category will be displayed in calendar using this selected color.</td>
+<td>Choose the color used for events in this category on the calendar.</td>
 </tr>
 <tr>
 <td><strong>Background color</strong></td>
-<td>If you select a color here, all events of this category will be displayed in calendar with this background color.</td>
+<td>Choose the background color for events in this category on the calendar.</td>
 </tr>    
 <tr>
 <td><strong>Keywords</strong></td>
@@ -70,31 +70,31 @@ Press **New** button in the toolbar to create new category. A form will be displ
 </tr>
 <tr>
 <td><strong> Access Level</strong></td>
-<td>Choose the access level which you want to be able to to access to this category (usually Public). By choosing an access level, only users has this access level can access/see the category.</td>
+<td>Choose who can see this category. Select Public for a category everyone can see.</td>
 </tr>
 <tr>
 <td><strong> Submit Event Access Level</strong></td>
-<td>Choose the access level which you want to be able to to submit events to this category. Useful when you only want to to allow users to submit events to certain categories from frontend of your site.</td>
+<td>Choose the access level required to submit events to this category from the frontend.</td>
 </tr>    
 <tr>
 <td><strong>Custom Detail URL</strong></td>
-<td>If you want to use a custom URL to show the category page, enter the URL here. Usually, this should be empty unless you use a page builder to build category page</td>
+<td>Enter a custom URL for the category page if you need one, such as when you build the page with a page builder. Otherwise, leave the field blank.</td>
 </tr>        
  <tr>
 <td><strong>Payment Methods</strong></td>
-<td>If you choose certain payment methods here, these payment methods will be used for all events belong to the categories (unless you override this setting inside the event). If no payment methods are selected, all published payment methods will be used.</td>
+<td>Choose the payment methods available for events in this category. An event can override this setting. If you leave it blank, all published payment methods are available.</td>
 </tr>           
 <tr>
 <td><strong>Description</strong></td>
-<td>Description of the category. Category description will be used to display on categories list page.</td>
+<td>Enter a description to display on the categories list page.</td>
 </tr>
 </tbody>
 </table>
 
 ### Messages
 
-If you setup messages here, all events from the category will use these messages instead of global messages (setup in Events Booking -> Emails & Messages section) unless these messages are also entered inside each event. In general, the message uses for each event will be determined in following order:
+Messages entered here override the global messages in Events Booking -> Emails & Messages for events in this category. Events Booking chooses the message for each event in the following order.
 
-- Messages setup inside event take highest priority
-- Then messages setup in the category.
-- And finally, the global email messages setup in Events Booking -> Emails & Messages.
+- Messages configured for the event.
+- Messages configured for the category.
+- Global messages configured in Events Booking -> Emails & Messages.

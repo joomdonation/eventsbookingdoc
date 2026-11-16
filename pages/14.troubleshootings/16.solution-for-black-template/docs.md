@@ -22,4 +22,4 @@ If you are using a blank template for your site, Events Booking layout might not
   color: #fff !important;
 }
 ```
-With these small custom css, it will look better.
+These CSS rules adjust the layout colors.

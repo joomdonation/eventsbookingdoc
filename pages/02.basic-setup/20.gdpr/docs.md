@@ -13,7 +13,7 @@ media_order: 'gdpr_settings.png,gpdr_registration_form.png'
 
 With that setup:
 
-1. Registrants will have to check on **Privacy Policy** checkbox to process the registration. They can also click on **Privacy Policy** to see the privacy policy article.
+1. Registrants will have to check on **Privacy Policy** checkbox to register. They can also click on **Privacy Policy** to see the privacy policy article.
 2. The default privacy short text is **By register to this event and agreeing to the Privacy Policy you agree to this web site storing your information.**. If you want to change it, you can go to Events Booking -> Translation, find the language item EB_AGREE_PRIVACY_POLICY_MESSAGE and change it.
 3. Users will only be subscribed to your newsleters if they check on **I want to subscribe to your newsletters** checkbox.
 

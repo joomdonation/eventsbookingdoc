@@ -4,17 +4,17 @@ media_order: 'fontend-locations-management.png,frontend-location-permission.png'
 visible: true
 ---
 
-Events Booking allow users to submit and manage locations of their own events from frontend of your site. If you want to enable this feature on your site, please follow instructions below:
+Users can submit and manage locations for their own events from the frontend. Follow these steps to enable this feature.
 
 ## Permission configuration
 
-You first need to configure your site to allow users to add/manage locations from frontend of your site. Go o Events Booking -> Configuration (or any pages in Events Booking in administrator area), click on Options button in the toolbar, select the user group(s) you want to allow creating/managing locations (for example, Registered group), set **Front-end Locations Creation** permission to **Allowed**. Please note that permission settings in Joomla are inherited, so when you enable this permission for a child group (Registered in this example), all it's children groups (Author, Editor, Publisher in this example) will have this permission allowed, too
+Go to Events Booking -> Configuration or any Events Booking page in the administrator area. Click Options in the toolbar, select a user group such as Registered, and set **Front-end Locations Creation** to **Allowed**. Joomla permissions are inherited, so child groups such as Author, Editor, and Publisher also receive this permission.
 
 ![frontend-location-permission](frontend-location-permission.png "frontend-location-permission")
 
 ## Create menu item
-Next, you will need to create a menu item to link to **Manage Locations** menu item type of Events Booking. Users can access to that menu item and see a screen like below display all locations which they created:
+Create an Events Booking menu item of type **Manage Locations**. Users can open it to see the locations they created, as shown below.
 
 ![fontend-locations-management](fontend-locations-management.png "fontend-locations-management")
 
-From that page, users can see list of locations which he created, add new location and update an existing location.
+From this page, users can create a location or edit one they already created.

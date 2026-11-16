@@ -3,7 +3,7 @@ title: 'Content Speakers'
 published: true
 ---
 
-This plugin allows you to speakers of one event (or from all events) in a Joomla article (or in any place which trigger content plugin like Custom HTML module)
+Display speakers from one event or from all events in a Joomla article or any other place that runs content plugins, such as a Custom HTML module.
 
 If you want to use this feature:
 1. Go to Extensions, Plugins, find and enable the plugin **Content - Events Booking Speakers**

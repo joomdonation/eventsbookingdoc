@@ -6,14 +6,14 @@ taxonomy:
 published: true
 ---
 
-By default, Events Booking uses TCPDF library to generate PDF (invoices, member cards). While it is good, does not have good support for css and good documentation, so we decided to implement a new plugin called **Events Booking - MPDF** to address these limitations. 
+Events Booking uses the TCPDF library by default to generate PDFs such as invoices and member cards. The **Events Booking - MPDF** plugin offers an alternative with broader CSS support and more detailed documentation.
 
 - If you use **Joomla 3 or Joomla 4**, please download the plugin at [https://joomdonation.com/downloads/plg_eventbooking_mpdf.zip](https://joomdonation.com/downloads/plg_eventbooking_mpdf.zip)
 - If you use **Joomla 5**, **Joomla 6**, [https://joomdonation.com/downloads/plg_eventbooking_mpdf_joomla5.zip](https://joomdonation.com/downloads/plg_eventbooking_mpdf_joomla5.zip)
 
 2. Go to **System** -> **Install** -> **Extensions**, install the downloaded plugin.
 3. Go to **System** -> **Plugins**, find and enable **Events Booking - MPDF** plugin.
-4. Access to Events Booking , then **Tools -> Download MPDF Fonts** to download fonts required for MPDF library to work. These fonts have large size, so we could not ship with Events Booking package by default.
+4. Open Events Booking , then **Tools -> Download MPDF Fonts** to download fonts required for MPDF library to work. These fonts have large size, so we could not ship with Events Booking package by default.
 5. The best thing about MPDF is that it supports css very well (see [https://mpdf.github.io/css-stylesheets/introduction.html](https://mpdf.github.io/css-stylesheets/introduction.html) for full documentation), so you should enter necessary css code to improve the layout of the generated PDF file. There are two ways to enter css code for PDF layouts as described below:
 
 ## Use PDF CSS config option

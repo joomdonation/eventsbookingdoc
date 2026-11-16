@@ -5,41 +5,41 @@ visible: true
 published: true
 ---
 
-This module displays categories setup in Events Booking using slider. To use this module, please create an instance of **Events Booking - Categories Slider** module and publish it on a module position on your site template. 
+This module displays event categories in a slider. To use it, create an instance of **Events Booking - Categories Slider** and publish it in a module position in your site template.
 
 
   
-The up-coming events module has following parameters:
+The module has the following parameters.
 
 ### Standard Parameters
 
-- **Parent Category: ** Choose a category here and only children categories of this category will be displayed. 
-- **Categories**: If you select categories categories here, only these categories which are children of the category selected in the parameter **Parent Category** above will be displayed.
-- **Exclude Categories**: If you want to exclude certain categories from being displayed, select those categories in this parameter.
-- **Number Categories**: Enter the number of categories which you want to be displayed in this module.
+- **Parent Category: ** Choose a category to display only its subcategories.
+- **Categories**: Choose which subcategories of the selected **Parent Category** to display.
+- **Exclude Categories**: Select the categories you want to hide.
+- **Number Categories**: Enter how many categories to display.
 
 ## Display Options
-- **Category Item Layout**: Choose the layout which will be used to display category in this module
-- **Enable Hover Effect**: Choose whether to enable hover affect when users hover in a category displayed in this module. Only applied if the **Category Item Layout** parameter does not set to **Overlay**
-- **Hover Background Color**: Set the background color when users hover a category item
-- **Hover Text Color**: Set the text color when users hover a category item
+- **Category Item Layout**: Choose the layout for each category.
+- **Enable Hover Effect**: Choose whether to show an effect when visitors hover over a category. This setting applies only when **Category Item Layout** is set to a layout other than **Overlay**.
+- **Hover Background Color**: Set the background color when a visitor hovers over a category.
+- **Hover Text Color**: Set the text color when a visitor hovers over a category.
 
 ## Slider Options
 1. **Theme**: Choose the theme you want to use for the slider.
-2. **Arrows**: Determines whether to create arrows or not
-3. **Pagination**: Determines whether to create pagination or not
-4. **Number Items**: Number of slides being displayed in the viewport
-5. **Auto Play**: Whether the slider should be auto-played
-6. **Speed**: Enter slider speed, the larger number, the higher speed
-7. **Gap**: The gap between slides. The CSS format is acceptable, such as 1em
+2. **Arrows**: Choose whether to show navigation arrows.
+3. **Pagination**: Choose whether to show pagination controls.
+4. **Number Items**: Set how many slides are visible at once.
+5. **Auto Play**: Choose whether the slider advances automatically.
+6. **Speed**: Enter a larger number for faster movement.
+7. **Gap**: Set the space between slides using a CSS value such as 1em.
 
 ## Reponsive Paramers
 
-Allow you to decide how many events will be displayed per slide depends on the width of the viewport
+Set how many category slides are visible at different viewport widths.
 
-- **Number Items Extra Small Viewport (less than 576px)**: Number of slides being displayed In Extra Small viewport (portrait phones, less than 576px)
-- **Number Items Small Viewport (less than 768px)**: Number of slides being displayed In Small viewport (landscape phones, less than 768px)
-- **Number Items Medium Viewport (less than 992px)**: Number of slides being displayed In Medium viewport (tablets, less than 992px)
-- **Number Items Large Viewport (less than 1200px)**:Number of slides being displayed In Large viewport (desktops, less than 1200px)
+- **Number Items Extra Small Viewport (less than 576px)**: Set how many slides to show on portrait phones.
+- **Number Items Small Viewport (less than 768px)**: Set how many slides to show on landscape phones.
+- **Number Items Medium Viewport (less than 992px)**: Set how many slides to show on tablets.
+- **Number Items Large Viewport (less than 1200px)**: Set how many slides to show on desktops.
 
 ![Categories Slider](categories_slider.png "Categories Slider")

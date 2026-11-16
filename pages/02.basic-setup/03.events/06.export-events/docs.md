@@ -3,7 +3,7 @@ title: 'Export Events'
 media_order: 'events_list_on_2018-03-20.xlsx,export-events.png'
 ---
 
-Events Booking allow you to export events into Excel/CSV file. You can use that exported data to import it to other system if needed. The other use-case is that you can export the events data, make the change directly on the Excel/CSV file and import it back to the system to have the data updated. On Events management screen, you can access to **Actions** => **Export Events** button in the toolbar to export the filtered events. Note that, before pressing **Export Events** button, you can filter events data you want and only events meet the filter will be exported
+Use **Actions** => **Export Events** in the toolbar on the events management screen to export events to an Excel or CSV file. Apply any filters before clicking **Export Events**. The file contains only the events that match those filters. You can use the file in another system or edit the event data and import it back into Events Booking.
 
 ![Export Events](export-events.png)
 

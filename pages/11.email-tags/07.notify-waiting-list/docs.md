@@ -3,9 +3,9 @@ title: 'Notify Waiting List Email'
 published: true
 ---
 
-This is the email sent to waiting list users of an event when a registration for that event cancelled (by the registrant or by admin of the website). The purpose is informing them so that they know that there are a space available and can join the event again.
+When a registrant or an administrator cancels a registration, Events Booking emails people on the waiting list to tell them a place is available.
 
-Go to Events Booking -> Emails & Messages, look at **Waiting List Messages** tab, find and change the two messages below: **Waiting List Notification Email Subject**, **Waiting List Notification Email Body** to meet your need
+To edit the email, go to Events Booking -> Emails & Messages and open **Waiting List Messages**. Edit **Waiting List Notification Email Subject** and **Waiting List Notification Email Body**.
 
 ## Supported Tags
 [REGISTRANT_FIRST_NAME] : First Name of the registrant who cancel registration

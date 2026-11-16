@@ -5,7 +5,7 @@ media_order: signing_secret.png
 ---
 
 ## Installation
-When you purchase the payment plugin, you will receive a zip file called **os_eb_stripecheckout_unzip_first.zip**. Unzip that file, you will get the file os_eb_stripecheckout.zip. Go to Events Booking -> Payment Plugins to install it as any other payment plugin. See [**Install Payment Plugin**](/basic-setup/payment-plugins#install-new-payment-plugin) for installation instructions if needed.
+Extract **os_eb_stripecheckout_unzip_first.zip** to get os_eb_stripecheckout.zip. Go to Events Booking -> Payment Plugins to install the plugin. See [**Install Payment Plugin**](/basic-setup/payment-plugins#install-new-payment-plugin) for the steps.
 
 ## Configuration
 
@@ -19,6 +19,6 @@ When you purchase the payment plugin, you will receive a zip file called **os_eb
 
 Select the event **checkout.session.completed** for that webhook URL.
 
-3. After setting up webhook, you need to get **Signing secret** of the webhook URL, and enter it into **Signing Secret** parameter of the payment plugin. In the webhook URL setting, click on Reveal button to get it (see the below screenshot)
+3. After setting up webhook, you need to get **Signing secret** of the webhook URL, and enter it into **Signing Secret** parameter of the payment plugin. In the webhook URL setting, click on Reveal button to get it (see the screenshot below)
 
 ![signing_secret](signing_secret.png "signing_secret")

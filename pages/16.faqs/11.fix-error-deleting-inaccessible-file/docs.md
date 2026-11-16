@@ -2,13 +2,13 @@
 title: 'Fix Error Deleting Inaccessible File'
 ---
 
-Sometime, when you update Events Booking extension, you will receive an error like below and cause update error
+You may see the following error when updating Events Booking.
 
 > Joomla\Filesystem\File::delete: Failed deleting inaccessible file autoload.php
 
-This issue causes by some changes in Joomla 3.9.0 API, see [https://github.com/joomla/joomla-cms/issues/23504](https://github.com/joomla/joomla-cms/issues/23504) for more detailed information if needed.
+The error is related to Joomla 3.9.0 API changes. See [https://github.com/joomla/joomla-cms/issues/23504](https://github.com/joomla/joomla-cms/issues/23504) for details.
 
-To solve this issue, please follow the instructions below:
+To apply the workaround, follow these steps.
 
 1. Open the file libraries/vendor/joomla/filesystem/src/File.php
 
@@ -23,4 +23,4 @@ Change it to:
 ```php
 if (!Path::canChmod($file) && false)
 ```
-Then try again, upgrade should work well.
+Run the update again.

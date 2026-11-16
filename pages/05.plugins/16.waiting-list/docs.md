@@ -6,8 +6,8 @@ taxonomy:
         - docs
 ---
 
-This plugin allow displaying waiting lists registrants of an event on event details page so that users who is viewing the event can see who is in waiting lists of the the event (in case Watiing List is enabled for the event)
+Display the waiting list on the event details page when the event has a waiting list enabled.
 
-If you want to use this feature, go to Extensions -> Plugins, find and enable the plugin **Events Booking - Waiting List**. Then on event details page, registrants of that event will be displayed like the attached screenshot.
+Go to Extensions -> Plugins and enable **Events Booking - Waiting List**. The waiting list appears on the event details page, as shown below.
 
 ![Registrants List](registrants_list.png)

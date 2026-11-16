@@ -3,10 +3,10 @@ title: 'PayPal VS PayPal Pro'
 visible: true
 ---
 
-You might think that PayPal Pro payment plugin is the pro version (mean has more features) of the standard PayPal payment plugin comes with Events Booking by default. However, it is not correct, PayPal and PayPal Pro is different types of payment plugins:
+PayPal and PayPal Pro are separate payment integrations. They handle checkout in different ways.
 
-1. os_paypal (which comes with Events Booking by default) implements PayPal Website Payment Standard method provides by PayPal. With this payment method, users will be redirected to PayPal website for processing payment, the whole payment process is handled by PayPal, so it  can be considered as a safe payment method
-2. os_paypal_pro (EB PayPal Pro) payment plugin allow customers to enter credit card information directly on your site for processing payment. They won't be redirected to PayPal, so it is simpler for customers to make payment. However, please note that:
+1. os_paypal is included with Events Booking and uses PayPal Website Payment Standard. PayPal handles the entire payment after redirecting the registrant to its website.
+2. With os_paypal_pro (EB PayPal Pro), registrants enter their credit card information directly on your site, which simplifies checkout.
 - PayPal Pro is only available in some countries like US, UK, Canada, Australia, so you can only use PayPal Pro if you are from one of the above countries
 - PayPal charges you monthly fee (30$ / month if I remember correctly) if you want to use PayPal Pro
-- With PayPal Pro, customers will enter credit card directly on your site for processing payment, so you your site should have SSL certificate so that credit card information will be encrypted before passing over interner, safe for your customers
+- With PayPal Pro, customers enter credit card details directly on your site. Use an SSL certificate to encrypt those details when they are sent.

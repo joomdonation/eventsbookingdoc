@@ -2,20 +2,20 @@
 title: 'Ticket Types'
 ---
 
-This plugin allows you to define multiple ticket types for an event, see [https://demo.joomdonation.com/eventsbooking/features/advanced-features/multiple-ticket-types](https://demo.joomdonation.com/eventsbooking/features/advanced-features/multiple-ticket-types) for a sample event which has multiple ticket types.
+Use this plugin to offer multiple ticket types for an event. See [https://demo.joomdonation.com/eventsbooking/features/advanced-features/multiple-ticket-types](https://demo.joomdonation.com/eventsbooking/features/advanced-features/multiple-ticket-types) for an example.
 
-1. Each ticket type can have it own **title, description, price, capacity, quantity limit per booking** as showed in the image below:![](ticket_types_setup.png)
-2. The ticket types which you setup for the event will be displayed on event list and event details page like in the screenshot below so that users can see what ticket types are avaialble, what's the price and how many tickets of each type left...![](ticket_types_information.png)
+1. Each ticket type can have it own **title, description, price, capacity, quantity limit per booking** as shown in the image below:![](ticket_types_setup.png)
+2. The ticket types that you set up for the event will be displayed on event list and event details page like in the screenshot below so that users can see what ticket types are avaialble, what's the price and how many tickets of each type left...![](ticket_types_information.png)
 3. On registration form, registrants can select number of each ticket types they want to purchase, make payment to complete registration. Of course, the price will be changed depend on the ticket types they purchase and the quantity they select![](ticket_type_registrations.png)
 
-If you want to use this feature:
+To set up ticket types, follow these steps.
 1. Go to Extensions -> Plugins Manager, find and publish the plugin **Events Booking - Ticket Types**
-2. Now, when you add/edit event, you will see a new tab called **Ticket Types** allowing to setup ticket types for that event
-3. If you want **number of registrants** of the registration record (by default, it set to 1) calculated base on the quantity of each ticket types registrants select, go to Events Booking, find the config option **Calculate Number Registrants Based on Tickets Quantity**, set it to **Yes**
+2. Now, when you add/edit event, you will see a new tab called **Ticket Types** allowing to set up ticket types for that event
+3. If you want **number of registrants** of the registration record (by default, it set to 1) calculated based on the quantity of each ticket types registrants select, go to Events Booking, find the config option **Calculate Number Registrants Based on Tickets Quantity**, set it to **Yes**
 
 ## Discount Rules
 
-Sometime, you might want to give registrants discount base on number of tickets they purchase for each ticket type. For that purchase, you can use Discount Rules. It can be defined for each ticket types: For example:
+Use Discount Rules to offer a discount based on the number of tickets a registrant buys. You can define rules for each ticket type, as shown in the example below.
 
 ### Fixed Discount Amount
 
