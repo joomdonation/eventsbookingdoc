@@ -18,3 +18,5 @@ Use Joomla’s task scheduler to automate payment reminders, email registrant li
 - [Delete Old QRCODEs](/scheduled-tasks/delete-old-qrcodes)
 - [Delete Past Events Index](/scheduled-tasks/delete-past-events-index) — Remove past events from Joomla Smart Search results.
 - [Delete Orphan Files](/scheduled-tasks/delete-orphan-files) — Remove unused uploads from registration forms.
+- [Send Reminder Emails](/scheduled-tasks/send-reminder-emails) — Send event reminders and follow-up emails to registrants, with optional certificate attachments.
+- [Send SMS Reminders](/scheduled-tasks/send-sms-reminders) — Send event reminders and follow-up text messages through your SMS gateway.
