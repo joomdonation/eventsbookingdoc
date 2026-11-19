@@ -8,7 +8,7 @@ taxonomy:
 
 Use **Discount Bundle** to offer a discount when a user registers for all the events in a bundle.
 
-To access to **Discount Bundles Management** page, there are 3 ways:
+Open **Discount Bundles Management** in either of these two ways:
 
 1. Go to **Components -> Events Booking -> Discount Bundles**.
 2. On any pages in Events Booking, access to **Setup -> Discount Bundles**.

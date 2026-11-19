@@ -20,7 +20,7 @@ You can use this tax rules to replace the Simple Tax option above if:
 
 To use Tax Rules, set **Activate Simple Tax** to **No**, then configure the rules as described below.
 
-Open the **Tax Rules** management page in one of these three ways.
+Open the **Tax Rules** management page in either of these two ways.
 
 1. Go to **Components** => **Events Booking** => **Tax Rules**.
 2. On any page in Events Booking, access to **Setup** => **Tax Rules**.

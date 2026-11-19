@@ -18,10 +18,10 @@ Use the search box to find the message you want to edit. You can search by any o
 
 To find a specific message, enter a few words from it into the search box.
 
-To see the messages and change it to suit your needs, there are 3 ways:
-1. Go to **Components -> Events Booking -> Emails & Messages**
-2. Access to Membership Pro Dashboard, then click on **Emails & Messages** icon.
-3. From any Events Booking page, go to **Setup -> Emails & Messages**.
+Open **Emails & Messages** in either of these two ways to review and customize the messages:
+
+1. Go to **Components -> Events Booking -> Emails & Messages**.
+2. From any Events Booking page, go to **Setup -> Emails & Messages**.
 
 ![emails-messages](emails-messages.png "emails-messages")
 

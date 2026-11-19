@@ -8,10 +8,10 @@ media_order: 'coupon-csv.png,coupons-management.png,add-new-coupon.png,batch-cou
 
 Use **Events Booking** to create coupon codes that give registrants a discount on event registrations.
 
-To access to coupons management page, use one of these three options.
-1. Go to **Components -> Events Booking -> Coupons**
-2. Open Events Booking **Dashboard**, then click the **Coupons** icon.
-3. On any pages in Events Booking, access to **Coupons** menu item
+Open the coupons management page in either of these two ways.
+
+1. Go to **Components -> Events Booking -> Coupons**.
+2. From any Events Booking page, open **Coupons**.
 
 ![coupons-management](coupons-management.png "coupons-management")
 

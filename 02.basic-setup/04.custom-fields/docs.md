@@ -10,11 +10,10 @@ Use **custom fields** to collect information from people when they register for 
 
 Events Booking creates the following **core fields** during installation: **First Name**, **Last Name**, **Organization**, **Address**, **Address2**, **City**, **State**, **Zip**, **Country**, **Phone**, **Fax**, **Email**, and **Comment**.
 
-Open the custom fields management page in any of these three ways.
+Open the custom fields management page in either of these two ways.
 
 1. Go to **Components** -> **Events Booking** -> **Custom Fields**.
-2. Open the Events Booking Dashboard, then click the **Custom Fields** icon.
-3. From any Events Booking page, go to **Setup** -> **Custom Fields**.
+2. From any Events Booking page, go to **Setup** -> **Custom Fields**.
 
 ![Custom Fields Management](fields.png)
 

@@ -6,11 +6,11 @@ taxonomy:
 media_order: 'registrants-management.png,registrants-management-settings.png,show_hide_columns.png'
 ---
 
-Open the registrants management page in any of these three ways.
+Open the registrants management page in either of these two ways.
 
-1. Go to **Components -> Events Booking -> Registrants**
-2. Open the Events Booking Dashboard, then click the **Registrants** icon
-3. From any Events Booking page, open **Registrants**.
+1. Go to **Components -> Events Booking -> Registrants**.
+2. From any Events Booking page, open **Registrants**.
+
 ![Registrants Management](registrants-management.png)
 
 Use this page to add, edit, publish, unpublish, import, or export registration records and email registrants. You can filter the records by event, registration status, or check-in status if you use QR codes to check in registrants from a mobile device.

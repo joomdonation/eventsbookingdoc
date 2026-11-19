@@ -8,11 +8,10 @@ media_order: eventsbooking-translation.png
 
 Use Translation in **Events Booking** to edit or add language items in the frontend and administrator area. You can translate the extension without editing the language files directly.
 
-Open the translation management page in any of these three ways.
+Open the translation management page in either of these two ways.
 
 1. Go to **Components -> Events Booking -> Translation**.
-2. Open Events Booking **Dashboard**, then click the **Translation** icon.
-3. From any Events Booking page, open **Translation**.
+2. From any Events Booking page, open **Translation**.
 
 ![eventsbooking-translation](eventsbooking-translation.png "eventsbooking-translation")
 

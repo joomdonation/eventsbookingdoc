@@ -10,11 +10,10 @@ For a paid event (price > 0), registrants need to pay to complete their registra
 
 Choose which payment methods registrants can use. **Events Booking** comes with five payment plugins: **PayPal** (PayPal Payments Standard), **Authorize.net** (AIM), **Eway**, **Worldpay**, and **Offline Payment**. Additional plugins are sold separately for $24.99 each. See [Events Booking Payment Plugins](https://joomdonation.com/payment-plugins/events-booking-payment-plugins.html) for the available plugins.
 
-Open **Payment Plugins** in any of these three ways:
+Open **Payment Plugins** in either of these two ways:
 
 1. Go to **Components -> Events Booking -> Payment Plugins**.
-2. Open the Events Booking **Dashboard**, then click the **Payment Plugins** icon.
-3. From any **Events Booking** page, go to **Setup -> Payment Plugins**.
+2. From any **Events Booking** page, go to **Setup -> Payment Plugins**.
 
 ![Payment Plugins management screen](payment-plugins.png)
 

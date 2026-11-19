@@ -22,10 +22,10 @@ media_order: 'events.png,events_filter.png'
 
 Events Booking uses one registration option at a time. Choose the option that fits how you want to collect registrations.
 
-Open the event management page in any of these three ways.
+Open the event management page in either of these two ways.
+
 1. Go to **Components** => **Events Booking** => **Events**.
-2. Open the Events Booking Dashboard and click the **Events** icon.
-3. From any Events Booking page, go to **Setup** => **Events**.
+2. From any Events Booking page, go to **Setup** => **Events**.
 
 ![Events Management](events.png)
 
