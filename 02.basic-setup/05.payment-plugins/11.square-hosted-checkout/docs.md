@@ -6,42 +6,45 @@ media_order: 'sandbox_access_token.png,sandbox_location_id.png,webhook_signature
 ---
 
 ## Installation
+
 After purchasing the plugin, go to **Events Booking** -> **Payment Plugins** and install **os_eb_squarehostedcheckout.zip**. See [**Install Payment Plugin**](/basic-setup/payment-plugins#install-new-payment-plugin) for the steps.
 
 ## Configuration
 
-1. Create a Square APP
+1. Create a Square app:
 
-- Go to https://developer.squareup.com/console/en/apps
-- Create an app if you already don't have one for Events Booking use on the website yet
-- Click on the app to go inside the app.
+    - Go to the [Square Developer Console](https://developer.squareup.com/console/en/apps).
+    - Create an app if you do not already have one for Events Booking on your website.
+    - Click the app to open its settings.
 
-2. Enter necessary payment plugins parameters
+2. Enter the payment plugin parameters:
 
-Go to **Events Booking** -> **Payment Plugins**, click on **os_squarehostedcheckout** payment plugin to edit and enter the following parameters:
+    Go to **Events Booking -> Payment Plugins**, open **os_squarehostedcheckout**, and enter the following parameters:
 
-- **Access Token**: Inside the app, you can easily see and get Access Token 
+    - **Access Token**: Copy the access token from your Square app.
 
-![sandbox_access_token](sandbox_access_token.png "sandbox_access_token")
+        ![Square sandbox access token](sandbox_access_token.png "Square sandbox access token")
 
-- **Location ID**: Inside the app, click on **Locations** link at the left and get Location ID from there
+    - **Location ID**: In the Square app, click **Locations** in the left menu and copy the location ID.
 
-![sandbox_location_id](sandbox_location_id.png "sandbox_location_id")
+        ![Square sandbox location ID](sandbox_location_id.png "Square sandbox location ID")
 
-- **Signature Key**: You can get data **Signature Key** data of the webhook which you create in next step.
+    - **Signature Key**: Get this value from the webhook you create in the next step.
 
-- **Order Prefix**: This is optional. You might want to enter a prefix for this parameter to make sure payment note passed to Square unique.
+    - **Order Prefix**: Optionally, enter a prefix to help make the payment note sent to Square unique.
 
-3. Create Webhook
+3. Create a webhook:
 
-Inside the app, from left menu, go to **Webhooks >> Subscriptions**, and add a new webhook subscription
+    In the Square app, go to **Webhooks -> Subscriptions** in the left menu and add a webhook subscription with the following settings:
 
-- **Webhook URL** : **https://domain.com/index.php?option=com_eventbooking&task=payment_confirm&payment_method=os_squarehostedcheckout**
+    - **Webhook URL**: Enter the following URL, replacing `https://domain.com/` with your site's URL:
 
-(Of course, need to replace https://domain.com/ with your site url)
+        ```text
+        https://domain.com/index.php?option=com_eventbooking&task=payment_confirm&payment_method=os_squarehostedcheckout
+        ```
 
-- **Events**: Select **payment.created** and **payment.updated**
+    - **Events**: Select **payment.created** and **payment.updated**.
 
-After creating webhook, get **Signature Key** of the webhook and enter it into **Signature Key** parameter of the payment plugin. 
+    After creating the webhook, copy its **Signature Key** into the payment plugin's **Signature Key** parameter and save your changes.
 
-![webhook_signature_key](webhook_signature_key.png "webhook_signature_key")
+    ![Square webhook signature key](webhook_signature_key.png "Square webhook signature key")

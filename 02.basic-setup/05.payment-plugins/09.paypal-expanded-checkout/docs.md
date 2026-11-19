@@ -10,10 +10,11 @@ published: true
 After purchasing the plugin, go to **Events Booking** -> **Payment Plugins** and install **os_eb_paypalepc.zip**. See [**Install Payment Plugin**](/basic-setup/payment-plugins#install-new-payment-plugin) for the steps.
 
 ## Configuration
-- Follow instructions at [https://developer.paypal.com/api/rest/#link-getclientidandclientsecret](https://developer.paypal.com/api/rest/#link-getclientidandclientsecret) , get **Client ID** and **Client Secret** of your PayPal account
-- Go to Events Booking -> Payment Plugins, click on os_paypalepc payment plugin to edit, enter necessary parameters there.
-- If you want to change the message displayed on payment screen, please go to **Events Booking** -> **Translation**, find the language item **EB_PAYPAL_EPC_PAYMENT_INSTRUCTIONS** and change it.
+
+1. Follow [PayPal's instructions for getting a Client ID and Client Secret](https://developer.paypal.com/api/rest/#link-getclientidandclientsecret) to get the credentials for your PayPal account.
+2. Go to **Events Booking -> Payment Plugins**, open **os_paypalepc**, and enter the required parameters. Save your changes.
+3. To change the message displayed on the payment screen, go to **Events Booking -> Translation**, find the language item **EB_PAYPAL_EPC_PAYMENT_INSTRUCTIONS**, and update its text.
 
 ## Joomla 4, Joomla 5, Joomla 6 Note
 
-If you are using Joomla 4.0+, it has a plugin called **System - HTTP Headers** . By default, that plugin will prevent the popup window to allow users to pay using their PayPal account. To prevent that issue, you will need to edit the plugin, change the **Cross-Origin-Opener-Policy** parameter to **same-origin-allow-popups** and it will work well
+Joomla 4.0 and later include the **System - HTTP Headers** plugin. Its default settings prevent the popup window used to pay with a PayPal account from working. To resolve this, edit the plugin, set **Cross-Origin-Opener-Policy** to **same-origin-allow-popups**, and save your changes.

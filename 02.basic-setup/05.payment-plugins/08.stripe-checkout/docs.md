@@ -5,6 +5,7 @@ media_order: signing_secret.png
 ---
 
 ## Installation
+
 Extract **os_eb_stripecheckout_unzip_first.zip** to get **os_eb_stripecheckout.zip**. Go to **Events Booking -> Payment Plugins** to install the plugin. See [**Install Payment Plugin**](/basic-setup/payment-plugins#install-new-payment-plugin) for the steps.
 
 ## Configuration
@@ -15,7 +16,7 @@ Stripe Checkout uses a webhook to notify Events Booking when a registrant comple
 
 1. Go to **Events Booking -> Payment Plugins** and click **os_stripecheckout** to edit it.
 2. Set **Payment Mode** to **Sandbox** for testing or **Live** to accept real payments.
-3. Open the [API keys page in your Stripe Dashboard](https://dashboard.stripe.com/apikeys), in the same Stripe account and environment you will use for payments. See [Stripe's API keys guide](https://docs.stripe.com/keys) for details.
+3. Open the [API keys page in your Stripe Dashboard](https://dashboard.stripe.com/apikeys) in the same Stripe account and environment you will use for payments. See [Stripe's API keys guide](https://docs.stripe.com/keys) for details.
 4. Copy the publishable key and secret key into the corresponding plugin parameters:
 
 | Payment Mode | Publishable Key Parameter | Secret Key Parameter |
@@ -38,15 +39,15 @@ Stripe now manages webhooks as **event destinations** in **Workbench**. The step
 7. Click **Continue**, select **Webhook endpoint** as the destination type, then click **Continue** again.
 8. In **Endpoint URL**, enter:
 
-   ```text
-   https://domain.com/index.php?option=com_eventbooking&task=payment_confirm&payment_method=os_stripecheckout
-   ```
+    ```text
+    https://domain.com/index.php?option=com_eventbooking&task=payment_confirm&payment_method=os_stripecheckout
+    ```
 
-   Replace **https://domain.com/** with your website's actual HTTPS URL. If Joomla is installed in a subfolder, include it. For example:
+    Replace `https://domain.com/` with your website's actual HTTPS URL. If Joomla is installed in a subfolder, include it. For example:
 
-   ```text
-   https://domain.com/joomla/index.php?option=com_eventbooking&task=payment_confirm&payment_method=os_stripecheckout
-   ```
+    ```text
+    https://domain.com/joomla/index.php?option=com_eventbooking&task=payment_confirm&payment_method=os_stripecheckout
+    ```
 
 9. If prompted for a destination name or description, enter something recognizable, such as **Events Booking - Stripe Checkout**.
 10. Click **Create destination** to save the webhook.
@@ -60,10 +61,10 @@ The URL must be publicly accessible with a valid HTTPS certificate. Use the fina
 3. Copy the complete value, which starts with `whsec_`.
 4. Return to **Events Booking -> Payment Plugins -> os_stripecheckout** and paste it into the appropriate parameter:
 
-   | Payment Mode | Plugin Parameter |
-   | --- | --- |
-   | Sandbox | **Sandbox Signing Secret** |
-   | Live | **Signing Secret** |
+    | Payment Mode | Plugin Parameter |
+    | --- | --- |
+    | Sandbox | **Sandbox Signing Secret** |
+    | Live | **Signing Secret** |
 
 5. Publish the payment plugin and save your changes.
 

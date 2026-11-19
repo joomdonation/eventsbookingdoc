@@ -3,11 +3,26 @@ title: Worldpay
 visible: true
 ---
 
-To use the Worldpay payment plugin, configure your Worldpay account as follows.
+## Plugin Configuration
 
-1. Log in to merchant account at worldpay, edit the installation, in the Payment Response URL textbox, enter **https://domain.com/index.php?option=com_eventbooking&task=payment_confirm&payment_method=os_worldpay&notify=1**,
+On the **Payment Plugins** management screen, open **os_worldpay** and configure the following settings:
 
-Of course https://domain.com needs to be replaced with your site URL.
+1. **Environment**: Set to **Sandbox** for test payments or **Live** for real payments.
+2. **Worldpay Installation ID**: Enter the installation ID from your Worldpay account.
+3. **Callback Password**: Enter the callback password configured for that Worldpay installation.
+4. Configure **Icon**, **Payment Processing Fee ($)**, and **Payment Processing Fee (%)** as needed. See [Common Plugin Parameters](/basic-setup/payment-plugins#common-plugin-parameters).
+5. Publish the plugin and save your changes.
 
+## Worldpay Account Configuration
 
-3. Check on **Payment Response enabled** checkbox
+Configure your Worldpay account as follows:
+
+1. Log in to your Worldpay merchant account and edit the installation. In **Payment Response URL**, enter:
+
+    ```text
+    https://domain.com/index.php?option=com_eventbooking&task=payment_confirm&payment_method=os_worldpay&notify=1
+    ```
+
+    Replace `https://domain.com` with your site's URL.
+
+2. Select the **Payment Response enabled** checkbox.
